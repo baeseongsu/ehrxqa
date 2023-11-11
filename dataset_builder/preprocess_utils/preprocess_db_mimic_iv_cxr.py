@@ -473,6 +473,7 @@ class Build_MIMIC_IV_CXR(Sampler):
         PATIENTS_table = PATIENTS_table.assign(dob=lambda x: x["anchor_year"] - x["anchor_age"])
         PATIENTS_table = PATIENTS_table[["row_id", "subject_id", "gender", "dob", "dod"]]
         # NOTE: the month and day of dob are randomly sampled
+        random.seed(0)  # NOTE: fix the random seed
         PATIENTS_table["dob"] = PATIENTS_table["dob"].apply(lambda x: generate_random_date(x))
         # NOTE: time format (dob/dod)
         for col in ["dob", "dod"]:
