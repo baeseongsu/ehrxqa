@@ -39,57 +39,57 @@ download_and_extract() {
     fi
 }
 
-# # Download MIMIC-CXR metadata
-# download_and_extract "$MIMIC_CXR/mimic-cxr-2.0.0-metadata.csv.gz" "physionet.org/files/mimic-cxr-jpg/2.0.0"
+# Download MIMIC-CXR metadata
+download_and_extract "$MIMIC_CXR/mimic-cxr-2.0.0-metadata.csv.gz" "physionet.org/files/mimic-cxr-jpg/2.0.0"
 
-# # Download Chest Imagenome files
-# download_and_extract "$CHEST_IMAGENOME_SILVER/scene_graph.zip" "physionet.org/files/chest-imagenome/1.0.0/silver_dataset"
-# download_and_extract "$CHEST_IMAGENOME_GOLD/gold_attributes_relations_500pts_500studies1st.txt" "physionet.org/files/chest-imagenome/1.0.0/gold_dataset"
-# download_and_extract "$CHEST_IMAGENOME_GOLD/gold_bbox_coordinate_annotations_1000images.csv" "physionet.org/files/chest-imagenome/1.0.0/gold_dataset"
-# download_and_extract "$CHEST_IMAGENOME_UTILS/scenegraph_postprocessing.py" "physionet.org/files/chest-imagenome/1.0.0/utils/scene_postprocessing"
-# download_and_extract "$CHEST_IMAGENOME_SEMANTICS/attribute_relations_v1.txt" "physionet.org/files/chest-imagenome/1.0.0/semantics"
-# download_and_extract "$CHEST_IMAGENOME_SEMANTICS/label_to_UMLS_mapping.json" "physionet.org/files/chest-imagenome/1.0.0/semantics"
-# download_and_extract "$CHEST_IMAGENOME_SEMANTICS/objects_extracted_from_reports_v1.txt" "physionet.org/files/chest-imagenome/1.0.0/semantics"
+# Download Chest Imagenome files
+download_and_extract "$CHEST_IMAGENOME_SILVER/scene_graph.zip" "physionet.org/files/chest-imagenome/1.0.0/silver_dataset"
+download_and_extract "$CHEST_IMAGENOME_GOLD/gold_attributes_relations_500pts_500studies1st.txt" "physionet.org/files/chest-imagenome/1.0.0/gold_dataset"
+download_and_extract "$CHEST_IMAGENOME_GOLD/gold_bbox_coordinate_annotations_1000images.csv" "physionet.org/files/chest-imagenome/1.0.0/gold_dataset"
+download_and_extract "$CHEST_IMAGENOME_UTILS/scenegraph_postprocessing.py" "physionet.org/files/chest-imagenome/1.0.0/utils/scene_postprocessing"
+download_and_extract "$CHEST_IMAGENOME_SEMANTICS/attribute_relations_v1.txt" "physionet.org/files/chest-imagenome/1.0.0/semantics"
+download_and_extract "$CHEST_IMAGENOME_SEMANTICS/label_to_UMLS_mapping.json" "physionet.org/files/chest-imagenome/1.0.0/semantics"
+download_and_extract "$CHEST_IMAGENOME_SEMANTICS/objects_extracted_from_reports_v1.txt" "physionet.org/files/chest-imagenome/1.0.0/semantics"
 
-# # Download MIMIC-IV hosp modules
-# download_and_extract "$MIMIC_IV/hosp/admissions.csv.gz" "physionet.org/files/mimiciv/2.2/hosp"
-# download_and_extract "$MIMIC_IV/hosp/diagnoses_icd.csv.gz" "physionet.org/files/mimiciv/2.2/hosp"
-# download_and_extract "$MIMIC_IV/hosp/d_icd_diagnoses.csv.gz" "physionet.org/files/mimiciv/2.2/hosp"
-# download_and_extract "$MIMIC_IV/hosp/d_icd_procedures.csv.gz" "physionet.org/files/mimiciv/2.2/hosp"
-# download_and_extract "$MIMIC_IV/hosp/d_labitems.csv.gz" "physionet.org/files/mimiciv/2.2/hosp"
-# download_and_extract "$MIMIC_IV/hosp/labevents.csv.gz" "physionet.org/files/mimiciv/2.2/hosp"
-# download_and_extract "$MIMIC_IV/hosp/microbiologyevents.csv.gz" "physionet.org/files/mimiciv/2.2/hosp"
-# download_and_extract "$MIMIC_IV/hosp/patients.csv.gz" "physionet.org/files/mimiciv/2.2/hosp"
-# download_and_extract "$MIMIC_IV/hosp/prescriptions.csv.gz" "physionet.org/files/mimiciv/2.2/hosp"
-# download_and_extract "$MIMIC_IV/hosp/procedures_icd.csv.gz" "physionet.org/files/mimiciv/2.2/hosp"
-# download_and_extract "$MIMIC_IV/hosp/transfers.csv.gz" "physionet.org/files/mimiciv/2.2/hosp"
+# Download MIMIC-IV hosp modules
+download_and_extract "$MIMIC_IV/hosp/admissions.csv.gz" "physionet.org/files/mimiciv/2.2/hosp"
+download_and_extract "$MIMIC_IV/hosp/diagnoses_icd.csv.gz" "physionet.org/files/mimiciv/2.2/hosp"
+download_and_extract "$MIMIC_IV/hosp/d_icd_diagnoses.csv.gz" "physionet.org/files/mimiciv/2.2/hosp"
+download_and_extract "$MIMIC_IV/hosp/d_icd_procedures.csv.gz" "physionet.org/files/mimiciv/2.2/hosp"
+download_and_extract "$MIMIC_IV/hosp/d_labitems.csv.gz" "physionet.org/files/mimiciv/2.2/hosp"
+download_and_extract "$MIMIC_IV/hosp/labevents.csv.gz" "physionet.org/files/mimiciv/2.2/hosp"
+download_and_extract "$MIMIC_IV/hosp/microbiologyevents.csv.gz" "physionet.org/files/mimiciv/2.2/hosp"
+download_and_extract "$MIMIC_IV/hosp/patients.csv.gz" "physionet.org/files/mimiciv/2.2/hosp"
+download_and_extract "$MIMIC_IV/hosp/prescriptions.csv.gz" "physionet.org/files/mimiciv/2.2/hosp"
+download_and_extract "$MIMIC_IV/hosp/procedures_icd.csv.gz" "physionet.org/files/mimiciv/2.2/hosp"
+download_and_extract "$MIMIC_IV/hosp/transfers.csv.gz" "physionet.org/files/mimiciv/2.2/hosp"
 
-# # Download MIMIC-IV icu modules
-# download_and_extract "$MIMIC_IV/icu/chartevents.csv.gz" "physionet.org/files/mimiciv/2.2/icu"
-# download_and_extract "$MIMIC_IV/icu/d_items.csv.gz" "physionet.org/files/mimiciv/2.2/icu"
-# download_and_extract "$MIMIC_IV/icu/icustays.csv.gz" "physionet.org/files/mimiciv/2.2/icu"
-# download_and_extract "$MIMIC_IV/icu/inputevents.csv.gz" "physionet.org/files/mimiciv/2.2/icu"
-# download_and_extract "$MIMIC_IV/icu/outputevents.csv.gz" "physionet.org/files/mimiciv/2.2/icu"
+# Download MIMIC-IV icu modules
+download_and_extract "$MIMIC_IV/icu/chartevents.csv.gz" "physionet.org/files/mimiciv/2.2/icu"
+download_and_extract "$MIMIC_IV/icu/d_items.csv.gz" "physionet.org/files/mimiciv/2.2/icu"
+download_and_extract "$MIMIC_IV/icu/icustays.csv.gz" "physionet.org/files/mimiciv/2.2/icu"
+download_and_extract "$MIMIC_IV/icu/inputevents.csv.gz" "physionet.org/files/mimiciv/2.2/icu"
+download_and_extract "$MIMIC_IV/icu/outputevents.csv.gz" "physionet.org/files/mimiciv/2.2/icu"
 
 # Save currentdirectory
 orig_dir=$(pwd)
 
-# # Change directory and run python script
-# if [ ! -f "physionet.org/files/chest-imagenome/1.0.0/silver_dataset/scene_tabular/attribute_relations_tabular.txt" ] || [ ! -f "physionet.org/files/chest-imagenome/1.0.0/silver_dataset/scene_tabular/bbox_objects_tabular.txt" ]; then
-#     cd "physionet.org/files/chest-imagenome/1.0.0/utils/scene_postprocessing"
+# Change directory and run python script
+if [ ! -f "physionet.org/files/chest-imagenome/1.0.0/silver_dataset/scene_tabular/attribute_relations_tabular.txt" ] || [ ! -f "physionet.org/files/chest-imagenome/1.0.0/silver_dataset/scene_tabular/bbox_objects_tabular.txt" ]; then
+    cd "physionet.org/files/chest-imagenome/1.0.0/utils/scene_postprocessing"
 
-#     echo '{
-#         "SCENE_DIR": "../../silver_dataset/scene_graph",
-#         "OUTPUT_DIR": "../../silver_dataset/scene_tabular",
-#         "OUTPUT_TYPE": ["attributes", "objects"],
-#         "RDF_LEVEL": "study_id",
-#         "RESOURCE": "../../semantics/label_to_UMLS_mapping.json",
-#         "AGGREGATION": "last",
-#         "INCLUDE_SECTIONS": "all"
-#     }' > scenegraph_postprocessing_settings.json
-#     python scenegraph_postprocessing.py
-#     echo "Done with scene postprocessing"
-# fi
+    echo '{
+        "SCENE_DIR": "../../silver_dataset/scene_graph",
+        "OUTPUT_DIR": "../../silver_dataset/scene_tabular",
+        "OUTPUT_TYPE": ["attributes", "objects"],
+        "RDF_LEVEL": "study_id",
+        "RESOURCE": "../../semantics/label_to_UMLS_mapping.json",
+        "AGGREGATION": "last",
+        "INCLUDE_SECTIONS": "all"
+    }' > scenegraph_postprocessing_settings.json
+    python scenegraph_postprocessing.py
+    echo "Done with scene postprocessing"
+fi
 
 # Return to the original directory
 cd "$orig_dir"
@@ -101,16 +101,16 @@ SPLITS=("train" "valid" "test")
 
 mkdir -p "$SAVE_DIR"
 
-# for split in "${SPLITS[@]}"; do
-#     if [ ! -f "${SAVE_DIR}/${split}_dataset.csv" ]; then
-#         for script in "${PREPROCESS_SCRIPTS[@]}"; do
-#             python "dataset_builder/${script}" \
-#                 --mimic_cxr_jpg_dir "physionet.org/files/mimic-cxr-jpg/2.0.0/" \
-#                 --chest_imagenome_dir "physionet.org/files/chest-imagenome/1.0.0/" \
-#                 --save_dir "$SAVE_DIR"
-#         done
-#     fi
-# done
+for split in "${SPLITS[@]}"; do
+    if [ ! -f "${SAVE_DIR}/${split}_dataset.csv" ]; then
+        for script in "${PREPROCESS_SCRIPTS[@]}"; do
+            python "dataset_builder/${script}" \
+                --mimic_cxr_jpg_dir "physionet.org/files/mimic-cxr-jpg/2.0.0/" \
+                --chest_imagenome_dir "physionet.org/files/chest-imagenome/1.0.0/" \
+                --save_dir "$SAVE_DIR"
+        done
+    fi
+done
 
 # DB preprocessing code
 declare -A splits=( ["test"]=400 ["train"]=800 )  # Array of splits and their corresponding number of patients
