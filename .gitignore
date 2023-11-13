@@ -158,3 +158,30 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
+
+
+# ignore files in folder
+database/mimic_iii/*
+database/mimic_iv/*
+database/mimic_iv_cxr/*
+dataset/mimic_iii/*
+dataset/mimic_iv/*
+dataset/mimic_iv_cxr/*
+dataset_builder/preprocessed_data/*
+physionet.org/*
+physionet.org/files/mimic-cxr-jpg/2.0.0/*
+physionet.org/files/chest-imagenome/1.0.0/*
+physionet.org/files/mimiciv/2.2/*
+# ehrxqa/dataset/train.json
+# ehrxqa/dataset/valid.json
+# ehrxqa/dataset/test.json
+
+# but keep the folder (by keeping .gitkeep file)
+!database/mimic_iii/.gitkeep
+!database/mimic_iv/.gitkeep
+!dataset/mimic_iii/.gitkeep
+!dataset/mimic_iv/.gitkeep
+!dataset_builder/preprocessed_data/.gitkeep
+!physionet.org/files/mimic-cxr-jpg/2.0.0/.gitkeep
+!physionet.org/files/chest-imagenome/1.0.0/.gitkeep
+!physionet.org/files/mimiciv/2.2/.gitkeep

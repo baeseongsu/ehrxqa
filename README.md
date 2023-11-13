@@ -12,9 +12,9 @@ Electronic Health Records (EHRs), which contain patients' medical histories in v
 
 ## Features
 
-- [ ] Provide a script to download source datasets (MIMIC-CXR-JPG, Chest ImaGenome, and MIMIC-IV) from Physionet.
-- [ ] Provide a script to preprocess the source datasets.
-- [ ] Provide a script to construct an integrated database (MIMIC-IV and MIMIC-CXR).
+- [x] Provide a script to download source datasets (MIMIC-CXR-JPG, Chest ImaGenome, and MIMIC-IV) from Physionet.
+- [x] Provide a script to preprocess the source datasets.
+- [x] Provide a script to construct an integrated database (MIMIC-IV and MIMIC-CXR).
 - [ ] Provide a script to generate the EHRXQA dataset (with answer information).
 
 ## Installation
@@ -31,7 +31,8 @@ conda create --name ehrxqa python=3.8.5
 conda activate ehrxqa
 
 # Install required packages
-pip install pandas==1.1.3 tqdm==4.65.0 scikit-learn==0.23.2
+pip install pandas==1.1.3 tqdm==4.65.0 scikit-learn==0.23.2 
+pip install dask
 ```
 
 ## Setup
@@ -64,8 +65,8 @@ The EHRXQA dataset is constructed from the MIMIC-CXR-JPG (v2.0.0), Chest ImaGeno
 
 ### Accessing the EHRXQA Dataset
 
-<!---
-While the complete EHRXQA dataset is being prepared for publication on the Physionet platform, we provide partial access to the dataset via this repository for credentialed users. The EHRXQA dataset mainly comprises three components: an image (I), a question (Q), and an answer (A). In this partial release, we omit the answer (A) and certain metadata, thereby maintaining privacy by preventing any instance-level information leakage. Moreover, during the creation of the dataset, we carefully implemented an unbiased sampling strategy for images, questions, and answers. This ensures no distribution-level leakage, such as the image-question distribution.
+
+While the complete EHRXQA dataset is being prepared for publication on the Physionet platform, we provide partial access to the dataset via this repository for credentialed users. 
 
 To access the EHRXQA dataset, you can run the provided main script (which requires your unique Physionet credentials) in this repository as follows:
 
@@ -78,10 +79,9 @@ During script execution, enter your PhysioNet credentials when prompted:
 - Username: Enter your PhysioNet username and press `Enter`.
 - Password: Enter your PhysioNet password and press `Enter`. The password characters won't appear on screen.
 
-This script performs several actions: 1) it downloads the source datasets from Physionet, 2) preprocesses these datasets, and 3) generates the complete MIMIC-CXR-VQA dataset by creating ground-truth answer information.
+This script performs several actions: 1) it downloads the source datasets from Physionet, 2) preprocesses these datasets, and 3) generates the complete EHRXQA dataset by creating ground-truth answer information.
 
 Ensure you keep your credentials secure. If you encounter any issues, please ensure that you have the necessary permissions, a stable internet connection, and all prerequisite tools installed.
---->
 
 ### Downloading MIMIC-CXR-JPG Images
 
@@ -102,15 +102,12 @@ This script performs several actions: 1) it reads the image paths from the JSON 
 
 ### Dataset Structure
 
-<!---
 The dataset is structured as follows:
 
 ```
-mimiccxrvqa
+ehrxqa
 └── dataset
-    ├── ans2idx.json
-    ├── _train_part1.json
-    ├── _train_part2.json
+    ├── _train_.json
     ├── _valid.json
     ├── _test.json
     ├── train.json (available post-script execution)
@@ -118,80 +115,54 @@ mimiccxrvqa
     └── test.json  (available post-script execution)
 ```
 
-- The `mimiccxrvqa` is the root directory. Within this, the `dataset` directory contains various JSON files that are part of the MIMIC-CXR-VQA dataset.
-- The `ans2idx.json` file is a dictionary mapping from answers to their corresponding indices.
-- `_train_part1.json`, `_train_part2.json`, `_valid.json`, and `_test.json` are pre-release versions of the dataset files corresponding to the training, validation, and testing sets respectively. These versions are intentionally incomplete to safeguard privacy and prevent the leakage of sensitive information; they do not include certain crucial information, such as the answers.
-- Once the main script is executed with valid Physionet credentials, the full versions of these files - `train.json`, `valid.json`, and `test.json` - will be generated. These files contain the complete information, including images, questions, and the corresponding answers for each entry in the respective sets.
----> 
+- The `ehrxqa` is the root directory. Within this, the `dataset` directory contains various JSON files that are part of the EHRXQA dataset.
+- `_train.json`, `_valid.json`, and `_test.json` are pre-release versions of the dataset files corresponding to the training, validation, and testing sets respectively. These versions are intentionally incomplete to safeguard privacy and prevent the leakage of sensitive information; they do not include certain crucial information, such as the answers.
+- Once the main script is executed with valid Physionet credentials, the full versions of these files - `train.json`, `valid.json`, and `test.json` - will be generated. These files contain the complete information, including the corresponding answers for each entry in the respective sets.
 
 ### Dataset Description
 
-<!--- { 
-The QA samples in the MIMIC-CXR-VQA dataset are stored in individual `.json` files. Each file contains a list of Python dictionaries with keys that indicate:
+The QA samples in the EHRXQA dataset are stored in individual .json files. Each file contains a list of Python dictionaries, with each key indicating:
 
-- `split`: a string indicating its split.
-- `idx`: a number indicating its instance index.
-- `image_id`: a string indicating the associated image ID.
-- `question`: a question string.
-- `content_type`: a string indicating its content type, which can be one of this list:
-    - `anatomy`
-    - `attribute`
-    - `presence`
-    - `abnormality`
-    - `plane`
-    - `gender`
-    - `size`
-- `semantic_type`: a string indicating its semantic type, which can be one of this list:
-    - `verify`
-    - `choose`
-    - `query`
-- `template`: a template string.
-- `template_program`: a string indicating its template program. Each template has a unique program to get its answer from the database.
-- `template_arguments`: a dictionary specifying its template arguments, consisting of five sub-dictionaries that represent the sampled values for arguments in the template. When an argument needs to appear multiple times in a question template, an index is appended to the dictionary.
-    - `object`
-    - `attribute`
-    - `category`
-    - `viewpos`
-    - `gender`
+- `db_id`: A string representing the corresponding database ID.
+- `split`: The dataset split category (e.g., training, test, validation).
+- `id`: A unique identifier for each instance in the dataset.
+- `question`: A paraphrased version of the question.
+- `template`: The final question template created by injecting real database values into the tag. This template represents the fully specified and contextualized form of the question.
+- `query`: The corresponding NeuralSQL/SQL query for the question.
+- `value`: Specific key-value pairs relevant to the question, sampled from the database.
+- `q_tag`: The initial sampled question template. This serves as the foundational structure for the question.
+- `t_tag`: Sampled time templates, used to provide temporal context and specificity to the question.
+- `o_tag`: Sampled operational values for the query, often encompassing numerical or computational aspects required for forming the question.
+- `v_tag`: Sampled visual values, which include elements like object, category, attribute, and comparison, adding further details to the question.
+- `tag`: A comprehensive tag that synthesizes the enhanced q_tag with additional elements (t_tag, o_tag, v_tag). This represents an intermediate, more specified version of the question template before the final template is formed.
+- `para_type`: The source of the paraphrase, either from a general machine-generated tool or specifically by GPT-4.
+- `is_impossible`: A boolean indicating whether the question is answerable based on the dataset.
+- `_gold_program`: A temporary program that is used to generate the answer.
 
-Note that these details can be open-sourced without safety concerns and without revealing the dataset's distribution information (including image, question, and answer distributions), thanks to our uniform sampling strategy.
+After validating PhysioNet credentials, the create_answer.py script generates the following items:
 
-After validating the PhysioNet credentials, the `create_answer.py` script generates the following items:
-
-- `answer`: an answer string.
-- `subject_id`: a string indicating the corresponding subject ID (patient ID).
-- `study_id`: a string indicating the corresponding study ID.
-- `image_path`: a string indicating the corresponding image path.
+- `answer`: The answer string based on the query execution.
 
 To be specific, here is the example instance:
 ```
-    "split": "train",
-    "idx": 13280,
-    "image_id": "34c81443-5a19ccad-7b5e431c-4e1dbb28-42a325c0",
-    "question": "Are there signs of both pleural effusion and lung cancer in the left lower lung zone?",
-    "content_type": "attribute",
-    "semantic_type": "verify",
-    "template": "Are there signs of both ${attribute_1} and ${attribute_2} in the ${object}?",
-    "template_program": "program_5",
-    "template_arguments": {
-      "object": {
-        "0": "left lower lung zone"
-      },
-      "attribute": {
-        "0": "pleural effusion",
-        "1": "lung cancer"
-      },
-      "category": {},
-      "viewpos": {},
-      "gender": {}
-    },
-	"answer": "Will be generated by dataset_builder/generate_answer.py"
-	"subject_id": "Will be generated by dataset_builder/generate_answer.py"
-	"study_id": "Will be generated by dataset_builder/generate_answer.py"
-	"image_path": "Will be generated by dataset_builder/generate_answer.py"
+{
+    'db_id': 'mimic_iv_cxr', 
+    'split': 'train',
+    'id': 0, 
+    'question': 'how many days have passed since the last chest x-ray of patient 18679317 depicting any anatomical findings in 2105?', 
+    'template': 'how many days have passed since the last time patient 18679317 had a chest x-ray study indicating any anatomicalfinding in 2105?', 
+    'query': 'select 1 * ( strftime(\'%J\',current_time) - strftime(\'%J\',t1.studydatetime) ) from ( select tb_cxr.study_id, tb_cxr.studydatetime from tb_cxr where tb_cxr.study_id in ( select distinct tb_cxr.study_id from tb_cxr where tb_cxr.subject_id = 18679317 and strftime(\'%Y\',tb_cxr.studydatetime) = \'2105\' ) ) as t1 where func_vqa("is the chest x-ray depicting any anatomical findings?", t1.study_id) = true', 
+    'value': {'patient_id': 18679317}, 
+    'q_tag': 'how many [unit_count] have passed since the [time_filter_exact1] time patient {patient_id} had a chest x-ray study indicating any ${category} [time_filter_global1]?', 
+    't_tag': ['abs-year-in', '', '', 'exact-last', ''], 
+    'o_tag': {'unit_count': {'nlq': 'days', 'sql': '1 * ', 'type': 'days', 'sql_pattern': '[unit_count]'}}, 
+    'v_tag': {'object': [], 'category': ['anatomicalfinding'], 'attribute': []}, 
+    'tag': 'how many [unit_count:days] have passed since the [time_filter_exact1:exact-last] time patient {patient_id} had a chest x-ray study indicating any anatomicalfinding [time_filter_global1:abs-year-in]?',
+    'para_type': 'machine', 
+    'is_impossible': False, 
+    'answer': 'Will be generated by dataset_builder/generate_answer.py'
 }
 ```
---->
 
 ## Versioning
 
