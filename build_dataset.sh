@@ -138,6 +138,17 @@ done
 
 echo "Database preprocessing complete."
 
+# Answer generation code
+for split in "${SPLITS[@]}"; do
+    python dataset_builder/generate_answer.py \
+        --mimic_iv_dir "physionet.org/files/mimiciv/2.2/" \
+        --mimic_cxr_jpg_dir "physionet.org/files/mimic-cxr-jpg/2.0.0/" \
+        --chest_imagenome_dir "physionet.org/files/chest-imagenome/1.0.0/" \
+        --json_file_path "dataset/mimic_iv_cxr/_${split}.json" \
+        --db_file_path "database/mimic_iv_cxr/${split}/mimic_iv_cxr.db" \
+        --output_path "dataset/${split}.json"
+done
+
 # Capture the end time
 end_time=$(date +%s)
 
