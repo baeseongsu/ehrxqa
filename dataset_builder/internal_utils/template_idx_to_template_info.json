@@ -1,0 +1,1706 @@
+{
+    "0": {
+        "question_template": "what is the intake method of {drug_name}?",
+        "vqa_template": null
+    },
+    "1": {
+        "question_template": "what is the cost of a procedure named {procedure_name}?",
+        "vqa_template": null
+    },
+    "2": {
+        "question_template": "what is the cost of a {lab_name} lab test?",
+        "vqa_template": null
+    },
+    "3": {
+        "question_template": "what is the cost of a drug named {drug_name}?",
+        "vqa_template": null
+    },
+    "4": {
+        "question_template": "what is the cost of diagnosing {diagnosis_name}?",
+        "vqa_template": null
+    },
+    "5": {
+        "question_template": "what does {abbreviation} stand for?",
+        "vqa_template": null
+    },
+    "6": {
+        "question_template": "what is the gender of patient {patient_id}?",
+        "vqa_template": null
+    },
+    "7": {
+        "question_template": "what is the date of birth of patient {patient_id}?",
+        "vqa_template": null
+    },
+    "8": {
+        "question_template": "what was the [time_filter_exact1] length of hospital stay of patient {patient_id}?",
+        "vqa_template": null
+    },
+    "9": {
+        "question_template": "what is the change in the weight of patient {patient_id} from the [time_filter_exact2] value measured [time_filter_global2] compared to the [time_filter_exact1] value measured [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "10": {
+        "question_template": "what is the change in the value of {lab_name} of patient {patient_id} from the [time_filter_exact2] value measured [time_filter_global2] compared to the [time_filter_exact1] value measured [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "11": {
+        "question_template": "what is the change in the {vital_name} of patient {patient_id} from the [time_filter_exact2] value measured [time_filter_global2] compared to the [time_filter_exact1] value measured [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "12": {
+        "question_template": "is the value of {lab_name} of patient {patient_id} [time_filter_exact2] measured [time_filter_global2] [comparison] than the [time_filter_exact1] value measured [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "13": {
+        "question_template": "is the {vital_name} of patient {patient_id} [time_filter_exact2] measured [time_filter_global2] [comparison] than the [time_filter_exact1] value measured [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "14": {
+        "question_template": "what is_verb the age of patient {patient_id} [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "15": {
+        "question_template": "what is_verb the name of insurance of patient {patient_id} [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "16": {
+        "question_template": "what is_verb the marital status of patient {patient_id} [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "17": {
+        "question_template": "what percentile is the value of {lab_value} in a {lab_name} lab test among patients of the same age as patient {patient_id} [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "18": {
+        "question_template": "how many [unit_count] have passed since patient {patient_id} was admitted to the hospital currently?",
+        "vqa_template": null
+    },
+    "19": {
+        "question_template": "how many [unit_count] have passed since patient {patient_id} was admitted to the icu currently?",
+        "vqa_template": null
+    },
+    "20": {
+        "question_template": "how many [unit_count] have passed since the [time_filter_exact1] time patient {patient_id} stayed in careunit {careunit} on the current hospital visit?",
+        "vqa_template": null
+    },
+    "21": {
+        "question_template": "how many [unit_count] have passed since the [time_filter_exact1] time patient {patient_id} stayed in ward {ward_id} on the current hospital visit?",
+        "vqa_template": null
+    },
+    "22": {
+        "question_template": "how many [unit_count] have passed since the [time_filter_exact1] time patient {patient_id} received a procedure on the current hospital visit?",
+        "vqa_template": null
+    },
+    "23": {
+        "question_template": "how many [unit_count] have passed since the [time_filter_exact1] time patient {patient_id} received a {procedure_name} procedure on the current hospital visit?",
+        "vqa_template": null
+    },
+    "24": {
+        "question_template": "how many [unit_count] have passed since the [time_filter_exact1] time patient {patient_id} was diagnosed with {diagnosis_name} on the current hospital visit?",
+        "vqa_template": null
+    },
+    "25": {
+        "question_template": "how many [unit_count] have passed since the [time_filter_exact1] time patient {patient_id} was prescribed {drug_name} on the current hospital visit?",
+        "vqa_template": null
+    },
+    "26": {
+        "question_template": "how many [unit_count] have passed since the [time_filter_exact1] time patient {patient_id} received a {lab_name} lab test on the current hospital visit?",
+        "vqa_template": null
+    },
+    "27": {
+        "question_template": "how many [unit_count] have passed since the [time_filter_exact1] time patient {patient_id} had a {intake_name} intake on the current icu visit?",
+        "vqa_template": null
+    },
+    "28": {
+        "question_template": "what was the [time_filter_exact1] hospital admission type of patient {patient_id} [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "29": {
+        "question_template": "what was the [time_filter_exact1] ward of patient {patient_id} [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "30": {
+        "question_template": "what was the [time_filter_exact1] careunit of patient {patient_id} [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "31": {
+        "question_template": "what was the [time_filter_exact1] measured height of patient {patient_id} [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "32": {
+        "question_template": "what was the [time_filter_exact1] measured weight of patient {patient_id} [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "33": {
+        "question_template": "what was the name of the diagnosis that patient {patient_id} [time_filter_exact1] received [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "34": {
+        "question_template": "what was the name of the procedure that patient {patient_id} [time_filter_exact1] received [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "35": {
+        "question_template": "what was the name of the drug that patient {patient_id} was [time_filter_exact1] prescribed via {drug_route} route [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "36": {
+        "question_template": "what was the name of the drug that patient {patient_id} was [time_filter_exact1] prescribed [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "37": {
+        "question_template": "what was the name of the drug that patient {patient_id} was prescribed [time_filter_within] after having been diagnosed with {diagnosis_name} [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "38": {
+        "question_template": "what was the name of the drug that patient {patient_id} was prescribed [time_filter_within] after having received a {procedure_name} procedure [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "39": {
+        "question_template": "what was the dose of {drug_name} that patient {patient_id} was [time_filter_exact1] prescribed [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "40": {
+        "question_template": "what was the total amount of dose of {drug_name} that patient {patient_id} were prescribed [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "41": {
+        "question_template": "what was the name of the drug that patient {patient_id} were prescribed [n_times] [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "42": {
+        "question_template": "what is the new prescription of patient {patient_id} [time_filter_global2] compared to the prescription [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "43": {
+        "question_template": "what was the [time_filter_exact1] measured value of a {lab_name} lab test of patient {patient_id} [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "44": {
+        "question_template": "what was the name of the lab test that patient {patient_id} [time_filter_exact1] received [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "45": {
+        "question_template": "what was the [agg_function] {lab_name} value of patient {patient_id} [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "46": {
+        "question_template": "what was the name of the allergy that patient {patient_id} had [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "47": {
+        "question_template": "what was the name of the substance that patient {patient_id} was allergic to [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "48": {
+        "question_template": "what was the organism name found in the [time_filter_exact1] {culture_name} microbiology test of patient {patient_id} [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "49": {
+        "question_template": "what was the organism name found in the [time_filter_exact1] {test_name} test of patient {patient_id} [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "50": {
+        "question_template": "what was the name of the specimen that patient {patient_id} was [time_filter_exact1] tested [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "51": {
+        "question_template": "what was the name of the microbiology test that patient {patient_id} [time_filter_exact1] received [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "52": {
+        "question_template": "what was the name of the intake that patient {patient_id} [time_filter_exact1] had [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "53": {
+        "question_template": "what was the total volume of {intake_name} intake that patient {patient_id} received [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "54": {
+        "question_template": "what was the total volume of intake that patient {patient_id} received [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "55": {
+        "question_template": "what was the name of the output that patient {patient_id} [time_filter_exact1] had [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "56": {
+        "question_template": "what was the total volume of {output_name} output that patient {patient_id} had [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "57": {
+        "question_template": "what was the total volume of output that patient {patient_id} had [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "58": {
+        "question_template": "what is the difference between the total volume of intake and output of patient {patient_id} [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "59": {
+        "question_template": "what was the [time_filter_exact1] measured {vital_name} of patient {patient_id} [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "60": {
+        "question_template": "what was the [agg_function] {vital_name} of patient {patient_id} [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "61": {
+        "question_template": "what is_verb the total hospital cost of patient {patient_id} [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "62": {
+        "question_template": "when was the [time_filter_exact1] hospital admission time of patient {patient_id} [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "63": {
+        "question_template": "when was the [time_filter_exact1] hospital admission time that patient {patient_id} was admitted via {admission_route} [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "64": {
+        "question_template": "when was the [time_filter_exact1] hospital discharge time of patient {patient_id} [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "65": {
+        "question_template": "what was the [time_filter_exact1] length of icu stay of patient {patient_id}?",
+        "vqa_template": null
+    },
+    "66": {
+        "question_template": "when was the [time_filter_exact1] time that patient {patient_id} was diagnosed with {diagnosis_name} [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "67": {
+        "question_template": "when was the [time_filter_exact1] procedure time of patient {patient_id} [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "68": {
+        "question_template": "when was the [time_filter_exact1] time that patient {patient_id} received a {procedure_name} procedure [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "69": {
+        "question_template": "when was the [time_filter_exact1] prescription time of patient {patient_id} [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "70": {
+        "question_template": "when was the [time_filter_exact1] time that patient {patient_id} was prescribed {drug_name} [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "71": {
+        "question_template": "when was the [time_filter_exact1] time that patient {patient_id} was prescribed {drug_name1} and {drug_name2} [time_filter_within] [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "72": {
+        "question_template": "when was the [time_filter_exact1] time that patient {patient_id} was prescribed a medication via {drug_route} route [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "73": {
+        "question_template": "when was the [time_filter_exact1] lab test of patient {patient_id} [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "74": {
+        "question_template": "when was the [time_filter_exact1] time that patient {patient_id} received a {lab_name} lab test [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "75": {
+        "question_template": "when was the [time_filter_exact1] time that patient {patient_id} had the [sort] value of {lab_name} [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "76": {
+        "question_template": "when was the [time_filter_exact1] microbiology test of patient {patient_id} [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "77": {
+        "question_template": "when was patient {patient_id}'s [time_filter_exact1] {culture_name} microbiology test [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "78": {
+        "question_template": "when was patient {patient_id}'s [time_filter_exact1] {test_name} test [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "79": {
+        "question_template": "when was the [time_filter_exact1] time that patient {patient_id} had a {intake_name} intake [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "80": {
+        "question_template": "when was the [time_filter_exact1] intake time of patient {patient_id} [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "81": {
+        "question_template": "when was the [time_filter_exact1] time that patient {patient_id} had a {output_name} output [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "82": {
+        "question_template": "when was the [time_filter_exact1] time that patient {patient_id} had a {vital_name} measured [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "83": {
+        "question_template": "when was the [time_filter_exact1] time that the {vital_name} of patient {patient_id} was [comparison] than {vital_value} [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "84": {
+        "question_template": "when was the [time_filter_exact1] time that patient {patient_id} had the [sort] {vital_name} [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "85": {
+        "question_template": "has_verb patient {patient_id} received a {procedure_name} procedure in other than the current hospital [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "86": {
+        "question_template": "has_verb patient {patient_id} been admitted to the hospital [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "87": {
+        "question_template": "has_verb patient {patient_id} been to an emergency room [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "88": {
+        "question_template": "has_verb patient {patient_id} received any procedure [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "89": {
+        "question_template": "has_verb patient {patient_id} received a {procedure_name} procedure [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "90": {
+        "question_template": "what was the name of the procedure that patient {patient_id} received [n_times] [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "91": {
+        "question_template": "has_verb patient {patient_id} received any diagnosis [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "92": {
+        "question_template": "has_verb patient {patient_id} been diagnosed with {diagnosis_name} [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "93": {
+        "question_template": "has_verb patient {patient_id} been prescribed {drug_name1}, {drug_name2}, or {drug_name3} [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "94": {
+        "question_template": "has_verb patient {patient_id} been prescribed any medication [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "95": {
+        "question_template": "has_verb patient {patient_id} been prescribed {drug_name} [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "96": {
+        "question_template": "has_verb patient {patient_id} received any lab test [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "97": {
+        "question_template": "has_verb patient {patient_id} received a {lab_name} lab test [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "98": {
+        "question_template": "has_verb patient {patient_id} had any allergy [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "99": {
+        "question_template": "has_verb patient {patient_id} had any microbiology test result [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "100": {
+        "question_template": "has_verb patient {patient_id} had any {culture_name} microbiology test result [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "101": {
+        "question_template": "has_verb patient {patient_id} had any {test_name} test result [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "102": {
+        "question_template": "has_verb there been any organism found in the [time_filter_exact1] {culture_name} microbiology test of patient {patient_id} [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "103": {
+        "question_template": "has_verb there been any organism found in the [time_filter_exact1] {test_name} test of patient {patient_id} [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "104": {
+        "question_template": "has_verb patient {patient_id} had any {intake_name} intake [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "105": {
+        "question_template": "has_verb patient {patient_id} had any {output_name} output [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "106": {
+        "question_template": "has_verb the {vital_name} of patient {patient_id} been ever [comparison] than {vital_value} [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "107": {
+        "question_template": "has_verb the {vital_name} of patient {patient_id} been normal [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "108": {
+        "question_template": "list the hospital admission time of patient {patient_id} [time_filter_global1].",
+        "vqa_template": null
+    },
+    "109": {
+        "question_template": "list the [unit_average] [agg_function] {lab_name} lab value of patient {patient_id} [time_filter_global1].",
+        "vqa_template": null
+    },
+    "110": {
+        "question_template": "list the [unit_average] [agg_function] weight of patient {patient_id} [time_filter_global1].",
+        "vqa_template": null
+    },
+    "111": {
+        "question_template": "list the [unit_average] [agg_function] volume of {intake_name} intake that patient {patient_id} received [time_filter_global1].",
+        "vqa_template": null
+    },
+    "112": {
+        "question_template": "list the [unit_average] [agg_function] volume of {output_name} output that patient {patient_id} had [time_filter_global1].",
+        "vqa_template": null
+    },
+    "113": {
+        "question_template": "list the [unit_average] [agg_function] {vital_name} of patient {patient_id} [time_filter_global1].",
+        "vqa_template": null
+    },
+    "114": {
+        "question_template": "count the number of hospital visits of patient {patient_id} [time_filter_global1].",
+        "vqa_template": null
+    },
+    "115": {
+        "question_template": "count the number of icu visits of patient {patient_id} [time_filter_global1].",
+        "vqa_template": null
+    },
+    "116": {
+        "question_template": "count the number of times that patient {patient_id} received a {procedure_name} procedure [time_filter_global1].",
+        "vqa_template": null
+    },
+    "117": {
+        "question_template": "count the number of drugs patient {patient_id} were prescribed [time_filter_global1].",
+        "vqa_template": null
+    },
+    "118": {
+        "question_template": "count the number of times that patient {patient_id} were prescribed {drug_name} [time_filter_global1].",
+        "vqa_template": null
+    },
+    "119": {
+        "question_template": "count the number of times that patient {patient_id} received a {lab_name} lab test [time_filter_global1].",
+        "vqa_template": null
+    },
+    "120": {
+        "question_template": "count the number of times that patient {patient_id} had a {intake_name} intake [time_filter_global1].",
+        "vqa_template": null
+    },
+    "121": {
+        "question_template": "count the number of times that patient {patient_id} had a {output_name} output [time_filter_global1].",
+        "vqa_template": null
+    },
+    "122": {
+        "question_template": "count the number of current patients.",
+        "vqa_template": null
+    },
+    "123": {
+        "question_template": "count the number of current patients aged [age_group].",
+        "vqa_template": null
+    },
+    "124": {
+        "question_template": "what is the [n_survival_period] survival rate of patients diagnosed with {diagnosis_name}?",
+        "vqa_template": null
+    },
+    "125": {
+        "question_template": "what is the [n_survival_period] survival rate of patients who were prescribed {drug_name} after having been diagnosed with {diagnosis_name}?",
+        "vqa_template": null
+    },
+    "126": {
+        "question_template": "what are the top [n_rank] diagnoses that have the highest [n_survival_period] mortality rate?",
+        "vqa_template": null
+    },
+    "127": {
+        "question_template": "what is_verb the [agg_function] total hospital cost that involves a procedure named {procedure_name} [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "128": {
+        "question_template": "what is_verb the [agg_function] total hospital cost that involves a {lab_name} lab test [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "129": {
+        "question_template": "what is_verb the [agg_function] total hospital cost that involves a drug named {drug_name} [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "130": {
+        "question_template": "what is_verb the [agg_function] total hospital cost that involves a diagnosis named {diagnosis_name} [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "131": {
+        "question_template": "list the ids of patients diagnosed with {diagnosis_name} [time_filter_global1].",
+        "vqa_template": null
+    },
+    "132": {
+        "question_template": "what is the [agg_function] [unit_average] number of patient records diagnosed with {diagnosis_name} [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "133": {
+        "question_template": "count the number of patients who were dead after having been diagnosed with {diagnosis_name} [time_filter_within] [time_filter_global1].",
+        "vqa_template": null
+    },
+    "134": {
+        "question_template": "count the number of patients who did not come back to the hospital [time_filter_within] after diagnosed with {diagnosis_name} [time_filter_global1].",
+        "vqa_template": null
+    },
+    "135": {
+        "question_template": "count the number of patients who were admitted to the hospital [time_filter_global1].",
+        "vqa_template": null
+    },
+    "136": {
+        "question_template": "count the number of patients who were discharged from the hospital [time_filter_global1].",
+        "vqa_template": null
+    },
+    "137": {
+        "question_template": "count the number of patients who stayed in ward {ward_id} [time_filter_global1].",
+        "vqa_template": null
+    },
+    "138": {
+        "question_template": "count the number of patients who stayed in careunit {careunit} [time_filter_global1].",
+        "vqa_template": null
+    },
+    "139": {
+        "question_template": "count the number of patients who were diagnosed with {diagnosis_name} [time_filter_within] after having received a {procedure_name} procedure [time_filter_global1].",
+        "vqa_template": null
+    },
+    "140": {
+        "question_template": "count the number of patients who were diagnosed with {diagnosis_name2} [time_filter_within] after having been diagnosed with {diagnosis_name1} [time_filter_global1].",
+        "vqa_template": null
+    },
+    "141": {
+        "question_template": "count the number of patients who were diagnosed with {diagnosis_name} [time_filter_global1].",
+        "vqa_template": null
+    },
+    "142": {
+        "question_template": "count the number of patients who received a {procedure_name} procedure [time_filter_global1].",
+        "vqa_template": null
+    },
+    "143": {
+        "question_template": "count the number of patients who received a {procedure_name} procedure [n_times] [time_filter_global1].",
+        "vqa_template": null
+    },
+    "144": {
+        "question_template": "count the number of patients who received a {procedure_name2} procedure [time_filter_within] after having received a {procedure_name1} procedure [time_filter_global1].",
+        "vqa_template": null
+    },
+    "145": {
+        "question_template": "count the number of patients who received a {procedure_name} procedure [time_filter_within] after having been diagnosed with {diagnosis_name} [time_filter_global1].",
+        "vqa_template": null
+    },
+    "146": {
+        "question_template": "count the number of {procedure_name} procedure cases [time_filter_global1].",
+        "vqa_template": null
+    },
+    "147": {
+        "question_template": "count the number of patients who were prescribed {drug_name} [time_filter_global1].",
+        "vqa_template": null
+    },
+    "148": {
+        "question_template": "count the number of {drug_name} prescription cases [time_filter_global1].",
+        "vqa_template": null
+    },
+    "149": {
+        "question_template": "count the number of patients who were prescribed {drug_name} [time_filter_within] after having received a {procedure_name} procedure [time_filter_global1].",
+        "vqa_template": null
+    },
+    "150": {
+        "question_template": "count the number of patients who were prescribed {drug_name} [time_filter_within] after having been diagnosed with {diagnosis_name} [time_filter_global1].",
+        "vqa_template": null
+    },
+    "151": {
+        "question_template": "count the number of patients who received a {lab_name} lab test [time_filter_global1].",
+        "vqa_template": null
+    },
+    "152": {
+        "question_template": "count the number of patients who received a {culture_name} microbiology test [time_filter_global1].",
+        "vqa_template": null
+    },
+    "153": {
+        "question_template": "count the number of patients who received a {test_name} test [time_filter_global1].",
+        "vqa_template": null
+    },
+    "154": {
+        "question_template": "count the number of patients who had a {intake_name} intake [time_filter_global1].",
+        "vqa_template": null
+    },
+    "155": {
+        "question_template": "what are_verb the top [n_rank] frequent diagnoses [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "156": {
+        "question_template": "what are_verb the top [n_rank] frequent diagnoses of patients aged [age_group] [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "157": {
+        "question_template": "what are_verb the top [n_rank] frequent diagnoses that patients were diagnosed [time_filter_within] after having received a {procedure_name} procedure [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "158": {
+        "question_template": "what are_verb the top [n_rank] frequent diagnoses that patients were diagnosed [time_filter_within] after having been diagnosed with {diagnosis_name} [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "159": {
+        "question_template": "what are_verb the top [n_rank] frequent procedures [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "160": {
+        "question_template": "what are_verb the top [n_rank] frequent procedures of patients aged [age_group] [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "161": {
+        "question_template": "what are_verb the top [n_rank] frequent procedures that patients received [time_filter_within] after having received a {procedure_name} procedure [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "162": {
+        "question_template": "what are_verb the top [n_rank] frequent procedures that patients received [time_filter_within] after having been diagnosed with {diagnosis_name} [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "163": {
+        "question_template": "what are_verb the top [n_rank] frequently prescribed drugs [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "164": {
+        "question_template": "what are_verb the top [n_rank] frequently prescribed drugs of patients aged [age_group] [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "165": {
+        "question_template": "what are_verb the top [n_rank] frequent prescribed drugs for patients who were also prescribed {drug_name} [time_filter_within] [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "166": {
+        "question_template": "what are_verb the top [n_rank] frequent drugs that patients were prescribed [time_filter_within] after having been prescribed with {drug_name} [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "167": {
+        "question_template": "what are_verb the top [n_rank] frequently prescribed drugs that patients were prescribed [time_filter_within] after having received a {procedure_name} procedure [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "168": {
+        "question_template": "what are_verb the top [n_rank] frequently prescribed drugs that patients were prescribed [time_filter_within] after having been diagnosed with {diagnosis_name} [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "169": {
+        "question_template": "what are_verb the top [n_rank] frequently prescribed drugs that patients aged [age_group] were prescribed [time_filter_within] after having been diagnosed with {diagnosis_name} [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "170": {
+        "question_template": "what are_verb the top [n_rank] frequently prescribed drugs that {gender} patients aged [age_group] were prescribed [time_filter_within] after having been diagnosed with {diagnosis_name} [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "171": {
+        "question_template": "what are_verb the top [n_rank] frequent lab tests [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "172": {
+        "question_template": "what are_verb the top [n_rank] frequent lab tests of patients aged [age_group] [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "173": {
+        "question_template": "what are_verb the top [n_rank] frequent lab tests that patients had [time_filter_within] after having been diagnosed with {diagnosis_name} [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "174": {
+        "question_template": "what are_verb the top [n_rank] frequent lab tests that patients had [time_filter_within] after having received a {procedure_name} procedure [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "175": {
+        "question_template": "what are_verb the top [n_rank] frequent specimens tested [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "176": {
+        "question_template": "what are_verb the top [n_rank] frequent microbiology tests [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "177": {
+        "question_template": "what are_verb the top [n_rank] frequent specimens that patients were tested [time_filter_within] after having been diagnosed with {diagnosis_name} [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "178": {
+        "question_template": "what are_verb the top [n_rank] frequent microbiology tests that patients had [time_filter_within] after having been diagnosed with {diagnosis_name} [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "179": {
+        "question_template": "what are_verb the top [n_rank] frequent specimens that patients were tested [time_filter_within] after having received a {procedure_name} procedure [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "180": {
+        "question_template": "what are_verb the top [n_rank] frequent microbiology tests that patients had [time_filter_within] after having received a {procedure_name} procedure [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "181": {
+        "question_template": "what are_verb the top [n_rank] frequent intake events [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "182": {
+        "question_template": "what are_verb the top [n_rank] frequent output events [time_filter_global1]?",
+        "vqa_template": null
+    },
+    "1000": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], are there any ${category} in the ${object}?",
+        "vqa_template": "are there any ${category} in the ${object}?"
+    },
+    "1001": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], is there ${attribute} in the ${object}?",
+        "vqa_template": "is there ${attribute} in the ${object}?"
+    },
+    "1002": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], is the ${object} abnormal?",
+        "vqa_template": "is the ${object} abnormal?"
+    },
+    "1003": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], are there any ${category_1} or ${category_2} in the ${object}?",
+        "vqa_template": "are there any ${category_1} or ${category_2} in the ${object}?"
+    },
+    "1004": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], are there both ${attribute_1} and ${attribute_2} in the ${object}?",
+        "vqa_template": "are there both ${attribute_1} and ${attribute_2} in the ${object}?"
+    },
+    "1005": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], is there either ${attribute_1} or ${attribute_2} in the ${object}?",
+        "vqa_template": "is there either ${attribute_1} or ${attribute_2} in the ${object}?"
+    },
+    "1006": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], list all ${category} in the ${object}.",
+        "vqa_template": "list all ${category} in the ${object}."
+    },
+    "1007": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], list all abnormality in the ${object}.",
+        "vqa_template": "list all abnormality in the ${object}."
+    },
+    "1008": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], list all ${category_1} and ${category_2} in the ${object}.",
+        "vqa_template": "list all ${category_1} and ${category_2} in the ${object}."
+    },
+    "1009": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], which ${category} is related to the ${object}, ${attribute_1} or ${attribute_2}?",
+        "vqa_template": "which ${category} is related to the ${object}, ${attribute_1} or ${attribute_2}?"
+    },
+    "1010": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], are there any abnormality in either the ${object_1} or the ${object_2}?",
+        "vqa_template": "are there any abnormality in either the ${object_1} or the ${object_2}?"
+    },
+    "1011": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], are there any abnormality in both the ${object_1} and the ${object_2}?",
+        "vqa_template": "are there any abnormality in both the ${object_1} and the ${object_2}?"
+    },
+    "1012": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], list all ${category} in either the ${object_1} or the ${object_2}.",
+        "vqa_template": "list all ${category} in either the ${object_1} or the ${object_2}."
+    },
+    "1013": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], list all common ${category} in both the ${object_1} and the ${object_2}.",
+        "vqa_template": "list all common ${category} in both the ${object_1} and the ${object_2}."
+    },
+    "1014": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], list all ${category} only in the ${object_1} but not in the ${object_2}.",
+        "vqa_template": "list all ${category} only in the ${object_1} but not in the ${object_2}."
+    },
+    "1015": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], list all abnormality in either the ${object_1} or the ${object_2}.",
+        "vqa_template": "list all abnormality in either the ${object_1} or the ${object_2}."
+    },
+    "1016": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], list all common abnormality in both the ${object_1} and the ${object_2}.",
+        "vqa_template": "list all common abnormality in both the ${object_1} and the ${object_2}."
+    },
+    "1017": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], list all abnormality only in the ${object_1} but not in the ${object_2}.",
+        "vqa_template": "list all abnormality only in the ${object_1} but not in the ${object_2}."
+    },
+    "1018": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], are there any ${category}?",
+        "vqa_template": "are there any ${category}?"
+    },
+    "1019": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], are there any abnormality?",
+        "vqa_template": "are there any abnormality?"
+    },
+    "1020": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], are there any ${category_1} or ${category_2}?",
+        "vqa_template": "are there any ${category_1} or ${category_2}?"
+    },
+    "1021": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], is there ${attribute}?",
+        "vqa_template": "is there ${attribute}?"
+    },
+    "1022": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], are there both ${attribute_1} and ${attribute_2}?",
+        "vqa_template": "are there both ${attribute_1} and ${attribute_2}?"
+    },
+    "1023": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], is there either ${attribute_1} or ${attribute_2}?",
+        "vqa_template": "is there either ${attribute_1} or ${attribute_2}?"
+    },
+    "1024": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], list all ${category}.",
+        "vqa_template": "list all ${category}."
+    },
+    "1025": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], list all ${category_1} and ${category_2}.",
+        "vqa_template": "list all ${category_1} and ${category_2}."
+    },
+    "1026": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], list all abnormality.",
+        "vqa_template": "list all abnormality."
+    },
+    "1027": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], which ${category} is related, ${attribute_1} or ${attribute_2}?",
+        "vqa_template": "which ${category} is related, ${attribute_1} or ${attribute_2}?"
+    },
+    "1028": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], are both the ${object_1} and the ${object_2} related to ${attribute}?",
+        "vqa_template": "are both the ${object_1} and the ${object_2} related to ${attribute}?"
+    },
+    "1029": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], is either the ${object_1} or the ${object_2} related to ${attribute}?",
+        "vqa_template": "is either the ${object_1} or the ${object_2} related to ${attribute}?"
+    },
+    "1030": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], list all anatomical locations related to ${attribute}.",
+        "vqa_template": "list all anatomical locations related to ${attribute}."
+    },
+    "1031": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], which anatomical location is related to ${attribute}, the ${object_1} or the ${object_2}?",
+        "vqa_template": "which anatomical location is related to ${attribute}, the ${object_1} or the ${object_2}?"
+    },
+    "1032": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], which anatomical location is abnormal, the ${object_1} or the ${object_2}?",
+        "vqa_template": "which anatomical location is abnormal, the ${object_1} or the ${object_2}?"
+    },
+    "1033": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], list all anatomical locations related to either ${attribute_1} or ${attribute_2}.",
+        "vqa_template": "list all anatomical locations related to either ${attribute_1} or ${attribute_2}."
+    },
+    "1034": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], list all common anatomical locations related to both ${attribute_1} and ${attribute_2}.",
+        "vqa_template": "list all common anatomical locations related to both ${attribute_1} and ${attribute_2}."
+    },
+    "1035": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], list all anatomical locations related to ${attribute_1} but not ${attribute_2}.",
+        "vqa_template": "list all anatomical locations related to ${attribute_1} but not ${attribute_2}."
+    },
+    "1036": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], are there any ${category} related to the ${object_1} and the ${object_2}?",
+        "vqa_template": "are there any ${category} related to the ${object_1} and the ${object_2}?"
+    },
+    "1037": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], are there any ${category} related to the ${object_1} or the ${object_2}?",
+        "vqa_template": "are there any ${category} related to the ${object_1} or the ${object_2}?"
+    },
+    "1038": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], list all anatomical locations related to any ${category}.",
+        "vqa_template": "list all anatomical locations related to any ${category}."
+    },
+    "1039": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], list all anatomical locations related to any ${category_1} or ${category_2}.",
+        "vqa_template": "list all anatomical locations related to any ${category_1} or ${category_2}."
+    },
+    "1046": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], is the width of the cardiac silhouette wider than 1/2 of the thorax width?",
+        "vqa_template": "is the width of the cardiac silhouette wider than 1/2 of the thorax width?"
+    },
+    "1047": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], is the width of the upper mediastinum wider than 1/3 of the thorax width?",
+        "vqa_template": "is the width of the upper mediastinum wider than 1/3 of the thorax width?"
+    },
+    "1100": {
+        "question_template": "given the study {study_id}, are there any ${category} in the ${object}?",
+        "vqa_template": "are there any ${category} in the ${object}?"
+    },
+    "1101": {
+        "question_template": "given the study {study_id}, is there ${attribute} in the ${object}?",
+        "vqa_template": "is there ${attribute} in the ${object}?"
+    },
+    "1102": {
+        "question_template": "given the study {study_id}, is the ${object} abnormal?",
+        "vqa_template": "is the ${object} abnormal?"
+    },
+    "1103": {
+        "question_template": "given the study {study_id}, are there any ${category_1} or ${category_2} in the ${object}?",
+        "vqa_template": "are there any ${category_1} or ${category_2} in the ${object}?"
+    },
+    "1104": {
+        "question_template": "given the study {study_id}, are there both ${attribute_1} and ${attribute_2} in the ${object}?",
+        "vqa_template": "are there both ${attribute_1} and ${attribute_2} in the ${object}?"
+    },
+    "1105": {
+        "question_template": "given the study {study_id}, is there either ${attribute_1} or ${attribute_2} in the ${object}?",
+        "vqa_template": "is there either ${attribute_1} or ${attribute_2} in the ${object}?"
+    },
+    "1106": {
+        "question_template": "given the study {study_id}, list all ${category} in the ${object}.",
+        "vqa_template": "list all ${category} in the ${object}."
+    },
+    "1107": {
+        "question_template": "given the study {study_id}, list all abnormality in the ${object}.",
+        "vqa_template": "list all abnormality in the ${object}."
+    },
+    "1108": {
+        "question_template": "given the study {study_id}, list all ${category_1} and ${category_2} in the ${object}.",
+        "vqa_template": "list all ${category_1} and ${category_2} in the ${object}."
+    },
+    "1109": {
+        "question_template": "given the study {study_id}, which ${category} is related to the ${object}, ${attribute_1} or ${attribute_2}?",
+        "vqa_template": "which ${category} is related to the ${object}, ${attribute_1} or ${attribute_2}?"
+    },
+    "1110": {
+        "question_template": "given the study {study_id}, are there any abnormality in either the ${object_1} or the ${object_2}?",
+        "vqa_template": "are there any abnormality in either the ${object_1} or the ${object_2}?"
+    },
+    "1111": {
+        "question_template": "given the study {study_id}, are there any abnormality in both the ${object_1} and the ${object_2}?",
+        "vqa_template": "are there any abnormality in both the ${object_1} and the ${object_2}?"
+    },
+    "1112": {
+        "question_template": "given the study {study_id}, list all ${category} in either the ${object_1} or the ${object_2}.",
+        "vqa_template": "list all ${category} in either the ${object_1} or the ${object_2}."
+    },
+    "1113": {
+        "question_template": "given the study {study_id}, list all common ${category} in both the ${object_1} and the ${object_2}.",
+        "vqa_template": "list all common ${category} in both the ${object_1} and the ${object_2}."
+    },
+    "1114": {
+        "question_template": "given the study {study_id}, list all ${category} only in the ${object_1} but not in the ${object_2}.",
+        "vqa_template": "list all ${category} only in the ${object_1} but not in the ${object_2}."
+    },
+    "1115": {
+        "question_template": "given the study {study_id}, list all abnormality in either the ${object_1} or the ${object_2}.",
+        "vqa_template": "list all abnormality in either the ${object_1} or the ${object_2}."
+    },
+    "1116": {
+        "question_template": "given the study {study_id}, list all common abnormality in both the ${object_1} and the ${object_2}.",
+        "vqa_template": "list all common abnormality in both the ${object_1} and the ${object_2}."
+    },
+    "1117": {
+        "question_template": "given the study {study_id}, list all abnormality only in the ${object_1} but not in the ${object_2}.",
+        "vqa_template": "list all abnormality only in the ${object_1} but not in the ${object_2}."
+    },
+    "1118": {
+        "question_template": "given the study {study_id}, are there any ${category}?",
+        "vqa_template": "are there any ${category}?"
+    },
+    "1119": {
+        "question_template": "given the study {study_id}, are there any abnormality?",
+        "vqa_template": "are there any abnormality?"
+    },
+    "1120": {
+        "question_template": "given the study {study_id}, are there any ${category_1} or ${category_2}?",
+        "vqa_template": "are there any ${category_1} or ${category_2}?"
+    },
+    "1121": {
+        "question_template": "given the study {study_id}, is there ${attribute}?",
+        "vqa_template": "is there ${attribute}?"
+    },
+    "1122": {
+        "question_template": "given the study {study_id}, are there both ${attribute_1} and ${attribute_2}?",
+        "vqa_template": "are there both ${attribute_1} and ${attribute_2}?"
+    },
+    "1123": {
+        "question_template": "given the study {study_id}, is there either ${attribute_1} or ${attribute_2}?",
+        "vqa_template": "is there either ${attribute_1} or ${attribute_2}?"
+    },
+    "1124": {
+        "question_template": "given the study {study_id}, list all ${category}.",
+        "vqa_template": "list all ${category}."
+    },
+    "1125": {
+        "question_template": "given the study {study_id}, list all ${category_1} and ${category_2}.",
+        "vqa_template": "list all ${category_1} and ${category_2}."
+    },
+    "1126": {
+        "question_template": "given the study {study_id}, list all abnormality.",
+        "vqa_template": "list all abnormality."
+    },
+    "1127": {
+        "question_template": "given the study {study_id}, which ${category} is related, ${attribute_1} or ${attribute_2}?",
+        "vqa_template": "which ${category} is related, ${attribute_1} or ${attribute_2}?"
+    },
+    "1128": {
+        "question_template": "given the study {study_id}, are both the ${object_1} and the ${object_2} related to ${attribute}?",
+        "vqa_template": "are both the ${object_1} and the ${object_2} related to ${attribute}?"
+    },
+    "1129": {
+        "question_template": "given the study {study_id}, is either the ${object_1} or the ${object_2} related to ${attribute}?",
+        "vqa_template": "is either the ${object_1} or the ${object_2} related to ${attribute}?"
+    },
+    "1130": {
+        "question_template": "given the study {study_id}, list all anatomical locations related to ${attribute}.",
+        "vqa_template": "list all anatomical locations related to ${attribute}."
+    },
+    "1131": {
+        "question_template": "given the study {study_id}, which anatomical location is related to ${attribute}, the ${object_1} or the ${object_2}?",
+        "vqa_template": "which anatomical location is related to ${attribute}, the ${object_1} or the ${object_2}?"
+    },
+    "1132": {
+        "question_template": "given the study {study_id}, which anatomical location is abnormal, the ${object_1} or the ${object_2}?",
+        "vqa_template": "which anatomical location is abnormal, the ${object_1} or the ${object_2}?"
+    },
+    "1133": {
+        "question_template": "given the study {study_id}, list all anatomical locations related to either ${attribute_1} or ${attribute_2}.",
+        "vqa_template": "list all anatomical locations related to either ${attribute_1} or ${attribute_2}."
+    },
+    "1134": {
+        "question_template": "given the study {study_id}, list all common anatomical locations related to both ${attribute_1} and ${attribute_2}.",
+        "vqa_template": "list all common anatomical locations related to both ${attribute_1} and ${attribute_2}."
+    },
+    "1135": {
+        "question_template": "given the study {study_id}, list all anatomical locations related to ${attribute_1} but not ${attribute_2}.",
+        "vqa_template": "list all anatomical locations related to ${attribute_1} but not ${attribute_2}."
+    },
+    "1136": {
+        "question_template": "given the study {study_id}, are there any ${category} related to the ${object_1} and the ${object_2}?",
+        "vqa_template": "are there any ${category} related to the ${object_1} and the ${object_2}?"
+    },
+    "1137": {
+        "question_template": "given the study {study_id}, are there any ${category} related to the ${object_1} or the ${object_2}?",
+        "vqa_template": "are there any ${category} related to the ${object_1} or the ${object_2}?"
+    },
+    "1138": {
+        "question_template": "given the study {study_id}, list all anatomical locations related to any ${category}.",
+        "vqa_template": "list all anatomical locations related to any ${category}."
+    },
+    "1139": {
+        "question_template": "given the study {study_id}, list all anatomical locations related to any ${category_1} or ${category_2}.",
+        "vqa_template": "list all anatomical locations related to any ${category_1} or ${category_2}."
+    },
+    "1146": {
+        "question_template": "given the study {study_id}, is the width of the cardiac silhouette wider than 1/2 of the thorax width?",
+        "vqa_template": "is the width of the cardiac silhouette wider than 1/2 of the thorax width?"
+    },
+    "1147": {
+        "question_template": "given the study {study_id}, is the width of the upper mediastinum wider than 1/3 of the thorax width?",
+        "vqa_template": "is the width of the upper mediastinum wider than 1/3 of the thorax width?"
+    },
+    "2000": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], are there any ${category} that are ${comparison} in the ${object} compared to the [time_filter_exact2] study of patient {patient_id} [time_filter_global2]?",
+        "vqa_template": "are there any ${category} in the ${object}?"
+    },
+    "2001": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], is ${attribute} ${comparison} in the ${object} compared to the [time_filter_exact2] study of patient {patient_id} [time_filter_global2]?",
+        "vqa_template": "is there ${attribute} in the ${object}?"
+    },
+    "2002": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], are there any abnormality that are ${comparison} in the ${object} compared to the [time_filter_exact2] study of patient {patient_id} [time_filter_global2]?",
+        "vqa_template": "are there any abnormality in the ${object}?"
+    },
+    "2003": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], are there any ${category} that are ${comparison} compared to the [time_filter_exact2] study of patient {patient_id} [time_filter_global2]?",
+        "vqa_template": "are there any ${category}?"
+    },
+    "2004": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], are there any abnormality that are ${comparison} compared to the [time_filter_exact2] study of patient {patient_id} [time_filter_global2]?",
+        "vqa_template": "are there any abnormality?"
+    },
+    "2005": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], is ${attribute} ${comparison} compared to the [time_filter_exact2] study of patient {patient_id} [time_filter_global2]?",
+        "vqa_template": "is there ${attribute}?"
+    },
+    "2006": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], list all ${category} that are ${comparison} in the ${object} compared to the [time_filter_exact2] study of patient {patient_id} [time_filter_global2]?",
+        "vqa_template": "list all ${category} in the ${object}."
+    },
+    "2007": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], list all abnormality that are ${comparison} in the ${object} compared to the [time_filter_exact2] study of patient {patient_id} [time_filter_global2]?",
+        "vqa_template": "list all abnormality in the ${object}."
+    },
+    "2008": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], list all ${category} that are ${comparison} compared to the [time_filter_exact2] study of patient {patient_id} [time_filter_global2]?",
+        "vqa_template": "list all ${category}."
+    },
+    "2009": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], list all abnormality that are ${comparison} compared to the [time_filter_exact2] study of patient {patient_id} [time_filter_global2]?",
+        "vqa_template": "list all abnormality."
+    },
+    "2010": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], list all anatomical locations related to ${attribute} that are ${comparison} compared to the [time_filter_exact2] study of patient {patient_id} [time_filter_global2]?",
+        "vqa_template": "list all anatomical locations related to ${attribute}."
+    },
+    "2011": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], list all anatomical locations related to any ${category} that are ${comparison} compared to the [time_filter_exact2] study of patient {patient_id} [time_filter_global2]?",
+        "vqa_template": "list all anatomical locations related to any ${category}."
+    },
+    "2100": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], are there any ${category} that are ${comparison} in the ${object} compared to the previous study?",
+        "vqa_template": "are there any ${category} in the ${object}?"
+    },
+    "2101": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], is ${attribute} ${comparison} in the ${object} compared to the previous study?",
+        "vqa_template": "is there ${attribute} in the ${object}?"
+    },
+    "2102": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], are there any abnormality that are ${comparison} in the ${object} compared to the previous study?",
+        "vqa_template": "are there any abnormality in the ${object}?"
+    },
+    "2103": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], are there any ${category} that are ${comparison} compared to the previous study?",
+        "vqa_template": "are there any ${category}?"
+    },
+    "2104": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], are there any abnormality that are ${comparison} compared to the previous study?",
+        "vqa_template": "are there any abnormality?"
+    },
+    "2105": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], is ${attribute} ${comparison} compared to the previous study?",
+        "vqa_template": "is there ${attribute}?"
+    },
+    "2106": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], list all ${category} that are ${comparison} in the ${object} compared to the previous study?",
+        "vqa_template": "list all ${category} in the ${object}."
+    },
+    "2107": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], list all abnormality that are ${comparison} in the ${object} compared to the previous study?",
+        "vqa_template": "list all abnormality in the ${object}."
+    },
+    "2108": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], list all ${category} that are ${comparison} compared to the previous study?",
+        "vqa_template": "list all ${category}."
+    },
+    "2109": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], list all abnormality that are ${comparison} compared to the previous study?",
+        "vqa_template": "list all abnormality."
+    },
+    "2110": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], list all anatomical locations related to ${attribute} that are ${comparison} compared to the previous study?",
+        "vqa_template": "list all anatomical locations related to ${attribute}."
+    },
+    "2111": {
+        "question_template": "given the [time_filter_exact1] study of patient {patient_id} [time_filter_global1], list all anatomical locations related to any ${category} that are ${comparison} compared to the previous study?",
+        "vqa_template": "list all anatomical locations related to any ${category}."
+    },
+    "2200": {
+        "question_template": "given the {study_id1} study, are there any ${category} that are ${comparison} in the ${object} compared to the {study_id2} study?",
+        "vqa_template": "are there any ${category} in the ${object}?"
+    },
+    "2201": {
+        "question_template": "given the {study_id1} study, is ${attribute} ${comparison} in the ${object} compared to the {study_id2} study?",
+        "vqa_template": "is there ${attribute} in the ${object}?"
+    },
+    "2202": {
+        "question_template": "given the {study_id1} study, are there any abnormality that are ${comparison} in the ${object} compared to the {study_id2} study?",
+        "vqa_template": "are there any abnormality in the ${object}?"
+    },
+    "2203": {
+        "question_template": "given the {study_id1} study, are there any ${category} that are ${comparison} compared to the {study_id2} study?",
+        "vqa_template": "are there any ${category}?"
+    },
+    "2204": {
+        "question_template": "given the {study_id1} study, are there any abnormality that are ${comparison} compared to the {study_id2} study?",
+        "vqa_template": "are there any abnormality?"
+    },
+    "2205": {
+        "question_template": "given the {study_id1} study, is ${attribute} ${comparison} compared to the {study_id2} study?",
+        "vqa_template": "is there ${attribute}?"
+    },
+    "2206": {
+        "question_template": "given the {study_id1} study, list all ${category} that are ${comparison} in the ${object} compared to the {study_id2} study?",
+        "vqa_template": "list all ${category} in the ${object}."
+    },
+    "2207": {
+        "question_template": "given the {study_id1} study, list all abnormality that are ${comparison} in the ${object} compared to the {study_id2} study?",
+        "vqa_template": "list all abnormality in the ${object}."
+    },
+    "2208": {
+        "question_template": "given the {study_id1} study, list all ${category} that are ${comparison} compared to the {study_id2} study?",
+        "vqa_template": "list all ${category}."
+    },
+    "2209": {
+        "question_template": "given the {study_id1} study, list all abnormality that are ${comparison} compared to the {study_id2} study?",
+        "vqa_template": "list all abnormality."
+    },
+    "2210": {
+        "question_template": "given the {study_id1} study, list all anatomical locations related to ${attribute} that are ${comparison} compared to the {study_id2} study?",
+        "vqa_template": "list all anatomical locations related to ${attribute}."
+    },
+    "2211": {
+        "question_template": "given the {study_id1} study, list all anatomical locations related to any ${category} that are ${comparison} compared to the {study_id2} study?",
+        "vqa_template": "list all anatomical locations related to any ${category}."
+    },
+    "2300": {
+        "question_template": "given the {study_id1} study, are there any ${category} that are ${comparison} in the ${object} compared to the previous study?",
+        "vqa_template": "are there any ${category} in the ${object}?"
+    },
+    "2301": {
+        "question_template": "given the {study_id1} study, is ${attribute} ${comparison} in the ${object} compared to the previous study?",
+        "vqa_template": "is there ${attribute} in the ${object}?"
+    },
+    "2302": {
+        "question_template": "given the {study_id1} study, are there any abnormality that are ${comparison} in the ${object} compared to the previous study?",
+        "vqa_template": "are there any abnormality in the ${object}?"
+    },
+    "2303": {
+        "question_template": "given the {study_id1} study, are there any ${category} that are ${comparison} compared to the previous study?",
+        "vqa_template": "are there any ${category}?"
+    },
+    "2304": {
+        "question_template": "given the {study_id1} study, are there any abnormality that are ${comparison} compared to the previous study?",
+        "vqa_template": "are there any abnormality?"
+    },
+    "2305": {
+        "question_template": "given the {study_id1} study, is ${attribute} ${comparison} compared to the previous study?",
+        "vqa_template": "is there ${attribute}?"
+    },
+    "2306": {
+        "question_template": "given the {study_id1} study, list all ${category} that are ${comparison} in the ${object} compared to the previous study?",
+        "vqa_template": "list all ${category} in the ${object}."
+    },
+    "2307": {
+        "question_template": "given the {study_id1} study, list all abnormality that are ${comparison} in the ${object} compared to the previous study?",
+        "vqa_template": "list all abnormality in the ${object}."
+    },
+    "2308": {
+        "question_template": "given the {study_id1} study, list all ${category} that are ${comparison} compared to the previous study?",
+        "vqa_template": "list all ${category}."
+    },
+    "2309": {
+        "question_template": "given the {study_id1} study, list all abnormality that are ${comparison} compared to the previous study?",
+        "vqa_template": "list all abnormality."
+    },
+    "2310": {
+        "question_template": "given the {study_id1} study, list all anatomical locations related to ${attribute} that are ${comparison} compared to the previous study?",
+        "vqa_template": "list all anatomical locations related to ${attribute}."
+    },
+    "2311": {
+        "question_template": "given the {study_id1} study, list all anatomical locations related to any ${category} that are ${comparison} compared to the previous study?",
+        "vqa_template": "list all anatomical locations related to any ${category}."
+    },
+    "3000": {
+        "question_template": "how many [unit_count] have passed since the [time_filter_exact1] time patient {patient_id} had a chest x-ray study indicating ${attribute} in the ${object} [time_filter_global1]?",
+        "vqa_template": "is there ${attribute} in the ${object}?"
+    },
+    "3001": {
+        "question_template": "how many [unit_count] have passed since the [time_filter_exact1] time patient {patient_id} had a chest x-ray study indicating any ${category} in the ${object} [time_filter_global1]?",
+        "vqa_template": "are there any ${category} in the ${object}?"
+    },
+    "3002": {
+        "question_template": "how many [unit_count] have passed since the [time_filter_exact1] time patient {patient_id} had a chest x-ray study indicating any abnormality in the ${object} [time_filter_global1]?",
+        "vqa_template": "are there any abnormality in the ${object}?"
+    },
+    "3003": {
+        "question_template": "how many [unit_count] have passed since the [time_filter_exact1] time patient {patient_id} had a chest x-ray study indicating ${attribute} [time_filter_global1]?",
+        "vqa_template": "is there ${attribute}?"
+    },
+    "3004": {
+        "question_template": "how many [unit_count] have passed since the [time_filter_exact1] time patient {patient_id} had a chest x-ray study indicating any ${category} [time_filter_global1]?",
+        "vqa_template": "are there any ${category}?"
+    },
+    "3005": {
+        "question_template": "how many [unit_count] have passed since the [time_filter_exact1] time patient {patient_id} had a chest x-ray study indicating any abnormality [time_filter_global1]?",
+        "vqa_template": "are there any abnormality?"
+    },
+    "3100": {
+        "question_template": "when was the [time_filter_exact1] time that patient {patient_id} had a chest x-ray study indicating ${attribute} in the ${object} [time_filter_global1]?",
+        "vqa_template": "is there ${attribute} in the ${object}?"
+    },
+    "3101": {
+        "question_template": "when was the [time_filter_exact1] time that patient {patient_id} had a chest x-ray study indicating any ${category} in the ${object} [time_filter_global1]?",
+        "vqa_template": "are there any ${category} in the ${object}?"
+    },
+    "3102": {
+        "question_template": "when was the [time_filter_exact1] time that patient {patient_id} had a chest x-ray study indicating any abnormality in the ${object} [time_filter_global1]?",
+        "vqa_template": "are there any abnormality in the ${object}?"
+    },
+    "3103": {
+        "question_template": "when was the [time_filter_exact1] time that patient {patient_id} had a chest x-ray study indicating ${attribute} [time_filter_global1]?",
+        "vqa_template": "is there ${attribute}?"
+    },
+    "3104": {
+        "question_template": "when was the [time_filter_exact1] time that patient {patient_id} had a chest x-ray study indicating any ${category} [time_filter_global1]?",
+        "vqa_template": "are there any ${category}?"
+    },
+    "3105": {
+        "question_template": "when was the [time_filter_exact1] time that patient {patient_id} had a chest x-ray study indicating any abnormality [time_filter_global1]?",
+        "vqa_template": "are there any abnormality?"
+    },
+    "3200": {
+        "question_template": "has {patient_id} had any chest x-ray study indicating ${attribute} in the ${object} [time_filter_global1]?",
+        "vqa_template": "is there ${attribute} in the ${object}?"
+    },
+    "3201": {
+        "question_template": "has {patient_id} had any chest x-ray study indicating any ${category} in the ${object} [time_filter_global1]?",
+        "vqa_template": "are there any ${category} in the ${object}?"
+    },
+    "3202": {
+        "question_template": "has {patient_id} had any chest x-ray study indicating any abnormality in the ${object} [time_filter_global1]?",
+        "vqa_template": "are there any abnormality in the ${object}?"
+    },
+    "3203": {
+        "question_template": "has {patient_id} had any chest x-ray study indicating ${attribute} [time_filter_global1]?",
+        "vqa_template": "is there ${attribute}?"
+    },
+    "3204": {
+        "question_template": "has {patient_id} had any chest x-ray study indicating any ${category} [time_filter_global1]?",
+        "vqa_template": "are there any ${category}?"
+    },
+    "3205": {
+        "question_template": "has {patient_id} had any chest x-ray study indicating any abnormality [time_filter_global1]?",
+        "vqa_template": "are there any abnormality?"
+    },
+    "3300": {
+        "question_template": "count the number of times that patient {patient_id} had chest x-ray studies indicating ${attribute} in the ${object} [time_filter_global1].",
+        "vqa_template": "is there ${attribute} in the ${object}?"
+    },
+    "3301": {
+        "question_template": "count the number of times that patient {patient_id} had chest x-ray studies indicating any ${category} in the ${object} [time_filter_global1].",
+        "vqa_template": "are there any ${category} in the ${object}?"
+    },
+    "3302": {
+        "question_template": "count the number of times that patient {patient_id} had chest x-ray studies indicating any abnormality in the ${object} [time_filter_global1].",
+        "vqa_template": "are there any abnormality in the ${object}?"
+    },
+    "3303": {
+        "question_template": "count the number of times that patient {patient_id} had chest x-ray studies indicating ${attribute} [time_filter_global1].",
+        "vqa_template": "is there ${attribute}?"
+    },
+    "3304": {
+        "question_template": "count the number of times that patient {patient_id} had chest x-ray studies indicating any ${category} [time_filter_global1].",
+        "vqa_template": "are there any ${category}?"
+    },
+    "3305": {
+        "question_template": "count the number of times that patient {patient_id} had chest x-ray studies indicating any abnormality [time_filter_global1].",
+        "vqa_template": "are there any abnormality?"
+    },
+    "4000": {
+        "question_template": "count the number of patients who had any chest x-ray study indicating ${attribute} in the ${object} [time_filter_global1].",
+        "vqa_template": "is there ${attribute} in the ${object}?"
+    },
+    "4001": {
+        "question_template": "count the number of patients who had any chest x-ray study indicating any ${category} in the ${object} [time_filter_global1].",
+        "vqa_template": "are there any ${category} in the ${object}?"
+    },
+    "4002": {
+        "question_template": "count the number of patients who had any chest x-ray study indicating any abnormality in the ${object} [time_filter_global1].",
+        "vqa_template": "are there any abnormality in the ${object}?"
+    },
+    "4003": {
+        "question_template": "count the number of patients who had any chest x-ray study indicating ${attribute} [time_filter_global1].",
+        "vqa_template": "is there ${attribute}?"
+    },
+    "4004": {
+        "question_template": "count the number of patients who had any chest x-ray study indicating any ${category} [time_filter_global1].",
+        "vqa_template": "are there any ${category}?"
+    },
+    "4005": {
+        "question_template": "count the number of patients who had any chest x-ray study indicating any abnormality [time_filter_global1].",
+        "vqa_template": "are there any abnormality?"
+    },
+    "4100": {
+        "question_template": "list the ids of patients who had any chest x-ray study indicating ${attribute} in the ${object} [time_filter_global1].",
+        "vqa_template": "is there ${attribute} in the ${object}?"
+    },
+    "4101": {
+        "question_template": "list the ids of patients who had any chest x-ray study indicating any ${category} in the ${object} [time_filter_global1].",
+        "vqa_template": "are there any ${category} in the ${object}?"
+    },
+    "4102": {
+        "question_template": "list the ids of patients who had any chest x-ray study indicating any abnormality in the ${object} [time_filter_global1].",
+        "vqa_template": "are there any abnormality in the ${object}?"
+    },
+    "4103": {
+        "question_template": "list the ids of patients who had any chest x-ray study indicating ${attribute} [time_filter_global1].",
+        "vqa_template": "is there ${attribute}?"
+    },
+    "4104": {
+        "question_template": "list the ids of patients who had any chest x-ray study indicating any ${category} [time_filter_global1].",
+        "vqa_template": "are there any ${category}?"
+    },
+    "4105": {
+        "question_template": "list the ids of patients who had any chest x-ray study indicating any abnormality [time_filter_global1].",
+        "vqa_template": "are there any abnormality?"
+    },
+    "5000": {
+        "question_template": "has_verb patient {patient_id} been diagnosed with {diagnosis_name} [time_filter_global1] and also had a chest x-ray study indicating ${attribute} in the ${object} within the same period?",
+        "vqa_template": "is there ${attribute} in the ${object}?"
+    },
+    "5001": {
+        "question_template": "has_verb patient {patient_id} been diagnosed with {diagnosis_name} [time_filter_global1] and also had a chest x-ray study indicating any ${category} in the ${object} within the same period?",
+        "vqa_template": "are there any ${category} in the ${object}?"
+    },
+    "5002": {
+        "question_template": "has_verb patient {patient_id} been diagnosed with {diagnosis_name} [time_filter_global1] and also had a chest x-ray study indicating any abnormality in the ${object} within the same period?",
+        "vqa_template": "are there any abnormality in the ${object}?"
+    },
+    "5003": {
+        "question_template": "has_verb patient {patient_id} been diagnosed with {diagnosis_name} [time_filter_global1] and also had a chest x-ray study indicating ${attribute} within the same period?",
+        "vqa_template": "is there ${attribute}?"
+    },
+    "5004": {
+        "question_template": "has_verb patient {patient_id} been diagnosed with {diagnosis_name} [time_filter_global1] and also had a chest x-ray study indicating any ${category} within the same period?",
+        "vqa_template": "are there any ${category}?"
+    },
+    "5005": {
+        "question_template": "has_verb patient {patient_id} been diagnosed with {diagnosis_name} [time_filter_global1] and also had a chest x-ray study indicating any abnormality within the same period?",
+        "vqa_template": "are there any abnormality?"
+    },
+    "5010": {
+        "question_template": "has_verb patient {patient_id} received a {procedure_name} procedure [time_filter_global1] and also had a chest x-ray study indicating ${attribute} in the ${object} within the same period?",
+        "vqa_template": "is there ${attribute} in the ${object}?"
+    },
+    "5011": {
+        "question_template": "has_verb patient {patient_id} received a {procedure_name} procedure [time_filter_global1] and also had a chest x-ray study indicating any ${category} in the ${object} within the same period?",
+        "vqa_template": "are there any ${category} in the ${object}?"
+    },
+    "5012": {
+        "question_template": "has_verb patient {patient_id} received a {procedure_name} procedure [time_filter_global1] and also had a chest x-ray study indicating any abnormality in the ${object} within the same period?",
+        "vqa_template": "are there any abnormality in the ${object}?"
+    },
+    "5013": {
+        "question_template": "has_verb patient {patient_id} received a {procedure_name} procedure [time_filter_global1] and also had a chest x-ray study indicating ${attribute} within the same period?",
+        "vqa_template": "is there ${attribute}?"
+    },
+    "5014": {
+        "question_template": "has_verb patient {patient_id} received a {procedure_name} procedure [time_filter_global1] and also had a chest x-ray study indicating any ${category} within the same period?",
+        "vqa_template": "are there any ${category}?"
+    },
+    "5015": {
+        "question_template": "has_verb patient {patient_id} received a {procedure_name} procedure [time_filter_global1] and also had a chest x-ray study indicating any abnormality within the same period?",
+        "vqa_template": "are there any abnormality?"
+    },
+    "5020": {
+        "question_template": "has_verb patient {patient_id} been prescribed with {drug_name} [time_filter_global1] and also had a chest x-ray study indicating ${attribute} in the ${object} within the same period?",
+        "vqa_template": "is there ${attribute} in the ${object}?"
+    },
+    "5021": {
+        "question_template": "has_verb patient {patient_id} been prescribed with {drug_name} [time_filter_global1] and also had a chest x-ray study indicating any ${category} in the ${object} within the same period?",
+        "vqa_template": "are there any ${category} in the ${object}?"
+    },
+    "5022": {
+        "question_template": "has_verb patient {patient_id} been prescribed with {drug_name} [time_filter_global1] and also had a chest x-ray study indicating any abnormality in the ${object} within the same period?",
+        "vqa_template": "are there any abnormality in the ${object}?"
+    },
+    "5023": {
+        "question_template": "has_verb patient {patient_id} been prescribed with {drug_name} [time_filter_global1] and also had a chest x-ray study indicating ${attribute} within the same period?",
+        "vqa_template": "is there ${attribute}?"
+    },
+    "5024": {
+        "question_template": "has_verb patient {patient_id} been prescribed with {drug_name} [time_filter_global1] and also had a chest x-ray study indicating any ${category} within the same period?",
+        "vqa_template": "are there any ${category}?"
+    },
+    "5025": {
+        "question_template": "has_verb patient {patient_id} been prescribed with {drug_name} [time_filter_global1] and also had a chest x-ray study indicating any abnormality within the same period?",
+        "vqa_template": "are there any abnormality?"
+    },
+    "5030": {
+        "question_template": "has_verb patient {patient_id} received any diagnosis [time_filter_global1] and also had a chest x-ray study indicating ${attribute} in the ${object} within the same period?",
+        "vqa_template": "is there ${attribute} in the ${object}?"
+    },
+    "5031": {
+        "question_template": "has_verb patient {patient_id} received any diagnosis [time_filter_global1] and also had a chest x-ray study indicating any ${category} in the ${object} within the same period?",
+        "vqa_template": "are there any ${category} in the ${object}?"
+    },
+    "5033": {
+        "question_template": "has_verb patient {patient_id} received any diagnosis [time_filter_global1] and also had a chest x-ray study indicating ${attribute} within the same period?",
+        "vqa_template": "is there ${attribute}?"
+    },
+    "5040": {
+        "question_template": "has_verb patient {patient_id} received any procedure [time_filter_global1] and also had a chest x-ray study indicating ${attribute} in the ${object} within the same period?",
+        "vqa_template": "is there ${attribute} in the ${object}?"
+    },
+    "5041": {
+        "question_template": "has_verb patient {patient_id} received any procedure [time_filter_global1] and also had a chest x-ray study indicating any ${category} in the ${object} within the same period?",
+        "vqa_template": "are there any ${category} in the ${object}?"
+    },
+    "5043": {
+        "question_template": "has_verb patient {patient_id} received any procedure [time_filter_global1] and also had a chest x-ray study indicating ${attribute} within the same period?",
+        "vqa_template": "is there ${attribute}?"
+    },
+    "5050": {
+        "question_template": "has_verb patient {patient_id} been prescribed any medication [time_filter_global1] and also had a chest x-ray study indicating ${attribute} in the ${object} within the same period?",
+        "vqa_template": "is there ${attribute} in the ${object}?"
+    },
+    "5051": {
+        "question_template": "has_verb patient {patient_id} been prescribed any medication [time_filter_global1] and also had a chest x-ray study indicating any ${category} in the ${object} within the same period?",
+        "vqa_template": "are there any ${category} in the ${object}?"
+    },
+    "5053": {
+        "question_template": "has_verb patient {patient_id} been prescribed any medication [time_filter_global1] and also had a chest x-ray study indicating ${attribute} within the same period?",
+        "vqa_template": "is there ${attribute}?"
+    },
+    "5100": {
+        "question_template": "has_verb patient {patient_id} had a chest x-ray study indicating ${attribute} in the ${object} [time_filter_within] after having been diagnosed with {diagnosis_name} [time_filter_global1]?",
+        "vqa_template": "is there ${attribute} in the ${object}?"
+    },
+    "5101": {
+        "question_template": "has_verb patient {patient_id} had a chest x-ray study indicating any ${category} in the ${object} [time_filter_within] after having been diagnosed with {diagnosis_name} [time_filter_global1]?",
+        "vqa_template": "are there any ${category} in the ${object}?"
+    },
+    "5102": {
+        "question_template": "has_verb patient {patient_id} had a chest x-ray study indicating any abnormality in the ${object} [time_filter_within] after having been diagnosed with {diagnosis_name} [time_filter_global1]?",
+        "vqa_template": "are there any abnormality in the ${object}?"
+    },
+    "5103": {
+        "question_template": "has_verb patient {patient_id} had a chest x-ray study indicating ${attribute} [time_filter_within] after having been diagnosed with {diagnosis_name} [time_filter_global1]?",
+        "vqa_template": "is there ${attribute}?"
+    },
+    "5104": {
+        "question_template": "has_verb patient {patient_id} had a chest x-ray study indicating any ${category} [time_filter_within] after having been diagnosed with {diagnosis_name} [time_filter_global1]?",
+        "vqa_template": "are there any ${category}?"
+    },
+    "5105": {
+        "question_template": "has_verb patient {patient_id} had a chest x-ray study indicating any abnormality [time_filter_within] after having been diagnosed with {diagnosis_name} [time_filter_global1]?",
+        "vqa_template": "are there any abnormality?"
+    },
+    "5110": {
+        "question_template": "has_verb patient {patient_id} had a chest x-ray study indicating ${attribute} in the ${object} [time_filter_within] after having received {procedure_name} procedure [time_filter_global1] ?",
+        "vqa_template": "is there ${attribute} in the ${object}?"
+    },
+    "5111": {
+        "question_template": "has_verb patient {patient_id} had a chest x-ray study indicating any ${category} in the ${object} [time_filter_within] after having received {procedure_name} procedure [time_filter_global1] ?",
+        "vqa_template": "are there any ${category} in the ${object}?"
+    },
+    "5112": {
+        "question_template": "has_verb patient {patient_id} had a chest x-ray study indicating any abnormality in the ${object} [time_filter_within] after having received {procedure_name} procedure [time_filter_global1] ?",
+        "vqa_template": "are there any abnormality in the ${object}?"
+    },
+    "5113": {
+        "question_template": "has_verb patient {patient_id} had a chest x-ray study indicating ${attribute} [time_filter_within] after having received {procedure_name} procedure [time_filter_global1] ?",
+        "vqa_template": "is there ${attribute}?"
+    },
+    "5114": {
+        "question_template": "has_verb patient {patient_id} had a chest x-ray study indicating any ${category} [time_filter_within] after having received {procedure_name} procedure [time_filter_global1] ?",
+        "vqa_template": "are there any ${category}?"
+    },
+    "5115": {
+        "question_template": "has_verb patient {patient_id} had a chest x-ray study indicating any abnormality [time_filter_within] after having received {procedure_name} procedure [time_filter_global1] ?",
+        "vqa_template": "are there any abnormality?"
+    },
+    "5120": {
+        "question_template": "has_verb patient {patient_id} had a chest x-ray study indicating ${attribute} in the ${object} [time_filter_within] after having been prescribed with {drug_name} [time_filter_global1] ?",
+        "vqa_template": "is there ${attribute} in the ${object}?"
+    },
+    "5121": {
+        "question_template": "has_verb patient {patient_id} had a chest x-ray study indicating any ${category} in the ${object} [time_filter_within] after having been prescribed with {drug_name} [time_filter_global1] ?",
+        "vqa_template": "are there any ${category} in the ${object}?"
+    },
+    "5122": {
+        "question_template": "has_verb patient {patient_id} had a chest x-ray study indicating any abnormality in the ${object} [time_filter_within] after having been prescribed with {drug_name} [time_filter_global1] ?",
+        "vqa_template": "are there any abnormality in the ${object}?"
+    },
+    "5123": {
+        "question_template": "has_verb patient {patient_id} had a chest x-ray study indicating ${attribute} [time_filter_within] after having been prescribed with {drug_name} [time_filter_global1] ?",
+        "vqa_template": "is there ${attribute}?"
+    },
+    "5124": {
+        "question_template": "has_verb patient {patient_id} had a chest x-ray study indicating any ${category} [time_filter_within] after having been prescribed with {drug_name} [time_filter_global1] ?",
+        "vqa_template": "are there any ${category}?"
+    },
+    "5125": {
+        "question_template": "has_verb patient {patient_id} had a chest x-ray study indicating any abnormality [time_filter_within] after having been prescribed with {drug_name} [time_filter_global1] ?",
+        "vqa_template": "are there any abnormality?"
+    },
+    "5200": {
+        "question_template": "has_verb patient {patient_id} been diagnosed with {diagnosis_name} [time_filter_within] after having had a chest x-ray study indicating ${attribute} in the ${object} [time_filter_global1] ?",
+        "vqa_template": "is there ${attribute} in the ${object}?"
+    },
+    "5201": {
+        "question_template": "has_verb patient {patient_id} been diagnosed with {diagnosis_name} [time_filter_within] after having had a chest x-ray study indicating any ${category} in the ${object} [time_filter_global1] ?",
+        "vqa_template": "are there any ${category} in the ${object}?"
+    },
+    "5202": {
+        "question_template": "has_verb patient {patient_id} been diagnosed with {diagnosis_name} [time_filter_within] after having had a chest x-ray study indicating any abnormality in the ${object} [time_filter_global1] ?",
+        "vqa_template": "are there any abnormality in the ${object}?"
+    },
+    "5203": {
+        "question_template": "has_verb patient {patient_id} been diagnosed with {diagnosis_name} [time_filter_within] after having had a chest x-ray study indicating ${attribute} [time_filter_global1] ?",
+        "vqa_template": "is there ${attribute}?"
+    },
+    "5204": {
+        "question_template": "has_verb patient {patient_id} been diagnosed with {diagnosis_name} [time_filter_within] after having had a chest x-ray study indicating any ${category} [time_filter_global1] ?",
+        "vqa_template": "are there any ${category}?"
+    },
+    "5205": {
+        "question_template": "has_verb patient {patient_id} been diagnosed with {diagnosis_name} [time_filter_within] after having had a chest x-ray study indicating any abnormality [time_filter_global1] ?",
+        "vqa_template": "are there any abnormality?"
+    },
+    "5210": {
+        "question_template": "has_verb patient {patient_id} received a {procedure_name} procedure [time_filter_within] after having had a chest x-ray study indicating ${attribute} in the ${object} [time_filter_global1] ?",
+        "vqa_template": "is there ${attribute} in the ${object}?"
+    },
+    "5211": {
+        "question_template": "has_verb patient {patient_id} received a {procedure_name} procedure [time_filter_within] after having had a chest x-ray study indicating any ${category} in the ${object} [time_filter_global1] ?",
+        "vqa_template": "are there any ${category} in the ${object}?"
+    },
+    "5212": {
+        "question_template": "has_verb patient {patient_id} received a {procedure_name} procedure [time_filter_within] after having had a chest x-ray study indicating any abnormality in the ${object} [time_filter_global1] ?",
+        "vqa_template": "are there any abnormality in the ${object}?"
+    },
+    "5213": {
+        "question_template": "has_verb patient {patient_id} received a {procedure_name} procedure [time_filter_within] after having had a chest x-ray study indicating ${attribute} [time_filter_global1] ?",
+        "vqa_template": "is there ${attribute}?"
+    },
+    "5214": {
+        "question_template": "has_verb patient {patient_id} received a {procedure_name} procedure [time_filter_within] after having had a chest x-ray study indicating any ${category} [time_filter_global1] ?",
+        "vqa_template": "are there any ${category}?"
+    },
+    "5215": {
+        "question_template": "has_verb patient {patient_id} received a {procedure_name} procedure [time_filter_within] after having had a chest x-ray study indicating any abnormality [time_filter_global1] ?",
+        "vqa_template": "are there any abnormality?"
+    },
+    "5220": {
+        "question_template": "has_verb patient {patient_id} been prescribed with {drug_name} [time_filter_within] after having had a chest x-ray study indicating ${attribute} in the ${object} [time_filter_global1] ?",
+        "vqa_template": "is there ${attribute} in the ${object}?"
+    },
+    "5221": {
+        "question_template": "has_verb patient {patient_id} been prescribed with {drug_name} [time_filter_within] after having had a chest x-ray study indicating any ${category} in the ${object} [time_filter_global1] ?",
+        "vqa_template": "are there any ${category} in the ${object}?"
+    },
+    "5222": {
+        "question_template": "has_verb patient {patient_id} been prescribed with {drug_name} [time_filter_within] after having had a chest x-ray study indicating any abnormality in the ${object} [time_filter_global1] ?",
+        "vqa_template": "are there any abnormality in the ${object}?"
+    },
+    "5223": {
+        "question_template": "has_verb patient {patient_id} been prescribed with {drug_name} [time_filter_within] after having had a chest x-ray study indicating ${attribute} [time_filter_global1] ?",
+        "vqa_template": "is there ${attribute}?"
+    },
+    "5224": {
+        "question_template": "has_verb patient {patient_id} been prescribed with {drug_name} [time_filter_within] after having had a chest x-ray study indicating any ${category} [time_filter_global1] ?",
+        "vqa_template": "are there any ${category}?"
+    },
+    "5225": {
+        "question_template": "has_verb patient {patient_id} been prescribed with {drug_name} [time_filter_within] after having had a chest x-ray study indicating any abnormality [time_filter_global1] ?",
+        "vqa_template": "are there any abnormality?"
+    },
+    "6000": {
+        "question_template": "count the number of patients aged [age_group] who had a chest x-ray study during hospital visit indicating ${attribute} in the ${object} [time_filter_global1].",
+        "vqa_template": "is there ${attribute} in the ${object}?"
+    },
+    "6001": {
+        "question_template": "count the number of patients aged [age_group] who had a chest x-ray study during hospital visit indicating any ${category} in the ${object} [time_filter_global1].",
+        "vqa_template": "are there any ${category} in the ${object}?"
+    },
+    "6003": {
+        "question_template": "count the number of patients aged [age_group] who had a chest x-ray study during hospital visit indicating ${attribute} [time_filter_global1].",
+        "vqa_template": "is there ${attribute}?"
+    },
+    "6010": {
+        "question_template": "list the ids of patients aged [age_group] who had a chest x-ray study during hospital visit indicating ${attribute} in the ${object} [time_filter_global1].",
+        "vqa_template": "is there ${attribute} in the ${object}?"
+    },
+    "6011": {
+        "question_template": "list the ids of patients aged [age_group] who had a chest x-ray study during hospital visit indicating any ${category} in the ${object} [time_filter_global1].",
+        "vqa_template": "are there any ${category} in the ${object}?"
+    },
+    "6013": {
+        "question_template": "list the ids of patients aged [age_group] who had a chest x-ray study during hospital visit indicating ${attribute} [time_filter_global1].",
+        "vqa_template": "is there ${attribute}?"
+    },
+    "6020": {
+        "question_template": "count the number of {gender} patients aged [age_group] who had a chest x-ray study during hospital visit indicating ${attribute} in the ${object} [time_filter_global1].",
+        "vqa_template": "is there ${attribute} in the ${object}?"
+    },
+    "6021": {
+        "question_template": "count the number of {gender} patients aged [age_group] who had a chest x-ray study during hospital visit indicating any ${category} in the ${object} [time_filter_global1].",
+        "vqa_template": "are there any ${category} in the ${object}?"
+    },
+    "6023": {
+        "question_template": "count the number of {gender} patients aged [age_group] who had a chest x-ray study during hospital visit indicating ${attribute} [time_filter_global1].",
+        "vqa_template": "is there ${attribute}?"
+    },
+    "6030": {
+        "question_template": "list the ids of {gender} patients aged [age_group] who had a chest x-ray study during hospital visit indicating ${attribute} in the ${object} [time_filter_global1].",
+        "vqa_template": "is there ${attribute} in the ${object}?"
+    },
+    "6031": {
+        "question_template": "list the ids of {gender} patients aged [age_group] who had a chest x-ray study during hospital visit indicating any ${category} in the ${object} [time_filter_global1].",
+        "vqa_template": "are there any ${category} in the ${object}?"
+    },
+    "6033": {
+        "question_template": "list the ids of {gender} patients aged [age_group] who had a chest x-ray study during hospital visit indicating ${attribute} [time_filter_global1].",
+        "vqa_template": "is there ${attribute}?"
+    }
+}
