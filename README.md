@@ -15,7 +15,7 @@ Electronic Health Records (EHRs), which contain patients' medical histories in v
 - [x] Provide a script to download source datasets (MIMIC-CXR-JPG, Chest ImaGenome, and MIMIC-IV) from Physionet.
 - [x] Provide a script to preprocess the source datasets.
 - [x] Provide a script to construct an integrated database (MIMIC-IV and MIMIC-CXR).
-- [ ] Provide a script to generate the EHRXQA dataset (with answer information).
+- [x] Provide a script to generate the EHRXQA dataset (with answer information).
 
 ## Installation
 
