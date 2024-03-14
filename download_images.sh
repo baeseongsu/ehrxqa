@@ -31,7 +31,7 @@ get_image_paths() {
 
 # Gather image paths from JSON dataset files
 image_paths_train=$(get_image_paths 'database/mimic_iv_cxr/train/tb_cxr.csv')
-image_paths_test=$(get_image_paths 'mimic_iv_cxr/test/tb_cxr.csv')
+image_paths_test=$(get_image_paths 'database/mimic_iv_cxr/test/tb_cxr.csv')
 
 # Combine paths from train, valid, and test
 image_paths=$(echo -e "$image_paths_train\n$image_paths_test")
