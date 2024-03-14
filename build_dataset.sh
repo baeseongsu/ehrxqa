@@ -146,7 +146,7 @@ for split in "${SPLITS[@]}"; do
         --chest_imagenome_dir "physionet.org/files/chest-imagenome/1.0.0/" \
         --json_file_path "dataset/mimic_iv_cxr/_${split}.json" \
         --db_file_path "database/mimic_iv_cxr/${split}/mimic_iv_cxr.db" \
-        --output_path "dataset/${split}.json"
+        --output_path "dataset/mimic_iv_cxr/${split}.json"
 done
 
 # Capture the end time
