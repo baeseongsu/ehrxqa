@@ -32,7 +32,7 @@ conda activate ehrxqa
 
 # Install required packages
 pip install pandas==1.1.3 tqdm==4.65.0 scikit-learn==0.23.2 
-pip install dask
+pip install dask=='2022.12.1'
 ```
 
 ## Setup
