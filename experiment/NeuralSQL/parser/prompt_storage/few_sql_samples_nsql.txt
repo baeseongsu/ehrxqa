@@ -1,0 +1,38 @@
+Q: how many hours have passed since patient 17915031 last received a lab test on the current hospital visit for urea nitrogen?
+NeuralSQL: select 24 * ( strftime('%j',current_time) - strftime('%j', labevents.charttime) ) from labevents where labevents.itemid in ( select d_labitems.itemid from d_labitems where d_labitems.label = 'urea nitrogen' ) and labevents.hadm_id in ( select admissions.hadm_id from admissions where admissions.subject_id = 17915031 and admissions.dischtime is null ) order by labevents.charttime desc limit 1
+
+
+Q: what is the amount of foley output patient 16909232 has on 12/31/2105?
+NeuralSQL: select sum(outputevents.value) from outputevents where outputevents.stay_id in ( select icustays.stay_id from icustays where icustays.hadm_id in ( select admissions.hadm_id from admissions where admissions.subject_id = 16909232 ) ) and outputevents.itemid in ( select d_items.itemid from d_items where d_items.label = 'foley' and d_items.linksto = 'outputevents' ) and strftime('%y-%m-%d',outputevents.charttime) = '2105-12-31'
+
+
+Q: count the number of patients who were diagnosed with other pulmonary embolism and infarction but did not come back to hospital within 2 month until 2103.
+NeuralSQL: select ( select count( distinct t1.subject_id ) from ( select admissions.subject_id, diagnoses_icd.charttime from diagnoses_icd join admissions on diagnoses_icd.hadm_id = admissions.hadm_id where diagnoses_icd.icd_code = ( select d_icd_diagnoses.icd_code from d_icd_diagnoses where d_icd_diagnoses.long_title = 'other pulmonary embolism and infarction' ) and strftime('%y',diagnoses_icd.charttime) <= '2103' ) as t1 ) - ( select count( distinct t2.subject_id ) from ( select admissions.subject_id, diagnoses_icd.charttime from diagnoses_icd join admissions on diagnoses_icd.hadm_id = admissions.hadm_id where diagnoses_icd.icd_code = ( select d_icd_diagnoses.icd_code from d_icd_diagnoses where d_icd_diagnoses.long_title = 'other pulmonary embolism and infarction' ) and strftime('%y',diagnoses_icd.charttime) <= '2103' ) as t2 join admissions on t2.subject_id = admissions.subject_id where t2.charttime < admissions.admittime and strftime('%y',admissions.admittime) <= '2103' and datetime(admissions.admittime) between datetime(t2.charttime) and datetime(t2.charttime,'+2 month') )
+
+
+Q: regarding the right hilar structures, which anatomical finding is relevant, infiltration or pleural/parenchymal scarring, given the study 51738006?
+NeuralSQL: select func_vqa("regarding the right hilar structures, which anatomical finding is relevant, infiltration or pleural/parenchymal scarring?", t1.study_id) from ( select tb_cxr.study_id from tb_cxr where tb_cxr.study_id = 51738006 ) as t1
+
+
+Q: in the first study of patient 18961402 last year, list all abnormalities in the left upper lung zone resolved compared to the preceding study.
+NeuralSQL: select func_vqa("list all abnormality in the left upper lung zone.", t1.study_id) from ( select tb_cxr.study_id from tb_cxr where tb_cxr.subject_id = 18961402 and tb_cxr.studydatetime < ( select distinct tb_cxr.studydatetime from tb_cxr where tb_cxr.study_id in ( select distinct tb_cxr.study_id from tb_cxr where tb_cxr.subject_id = 18961402 AND datetime(tb_cxr.studydatetime,'start of year') = datetime(current_time,'start of year','-1 year') ORDER BY tb_cxr.studydatetime ASC LIMIT 1 ) ) order by tb_cxr.studydatetime desc limit 1 ) as t1 except select func_vqa("list all abnormality in the left upper lung zone.", t2.study_id) from ( select tb_cxr.study_id from tb_cxr where tb_cxr.study_id in ( select distinct tb_cxr.study_id from tb_cxr where tb_cxr.subject_id = 18961402 AND datetime(tb_cxr.studydatetime,'start of year') = datetime(current_time,'start of year','-1 year') ORDER BY tb_cxr.studydatetime ASC LIMIT 1 ) ) as t2
+
+
+Q: what is the study time of the first chest x-ray for patient 15346117 that showed enlarged cardiac silhouette in the mediastinum, conducted on 11/this year?
+NeuralSQL: select distinct t1.studydatetime from ( select tb_cxr.study_id, tb_cxr.studydatetime from tb_cxr where tb_cxr.study_id in ( select distinct tb_cxr.study_id from tb_cxr where tb_cxr.subject_id = 15346117 AND datetime(tb_cxr.studydatetime,'start of year') = datetime(current_time,'start of year','-0 year') AND strftime('%m',tb_cxr.studydatetime) = '11' ) ) as t1 where func_vqa("does a chest x-ray show enlarged cardiac silhouette in the mediastinum?", t1.study_id) = true ORDER BY t1.studydatetime ASC LIMIT 1
+
+
+Q: please provide a list of patient ids for those whose chest x-ray studies since 6 year ago indicated any tubes/lines in the left apical zone.
+NeuralSQL: select distinct t1.subject_id from ( select * from tb_cxr where tb_cxr.study_id in ( select distinct tb_cxr.study_id from tb_cxr where datetime(tb_cxr.studydatetime) >= datetime(current_time,'-6 year') ) ) as t1 where func_vqa("does a chest x-ray indicate any tubes/lines in the left apical zone?", t1.study_id) = true
+
+
+Q: has a chest x-ray of patient 13755254 demonstrated any technical assessments within 2 month after the prescription of potassium chl 40 meq / 1000 ml ns in 2101?
+NeuralSQL: select count(*)>0 from ( select prescriptions.starttime from prescriptions where prescriptions.drug = 'potassium chl 40 meq / 1000 ml ns' and prescriptions.hadm_id in ( select admissions.hadm_id from admissions where admissions.subject_id = 13755254 ) and strftime('%y',prescriptions.starttime) = '2101' ) as t1 join ( select tb_cxr.studydatetime from tb_cxr where tb_cxr.study_id in ( select distinct t2.study_id from ( select distinct tb_cxr.study_id from tb_cxr where tb_cxr.study_id in ( select distinct tb_cxr.study_id from tb_cxr where tb_cxr.subject_id = 13755254 and strftime('%y',tb_cxr.studydatetime) = '2101' ) ) as t2 where func_vqa("has a chest x-ray demonstrated any technical assessments?", t2.study_id) = true ) ) as t3 where t1.starttime < t3.studydatetime and ( datetime(t2.studydatetime) between datetime(t1.starttime) and datetime(t1.starttime,'+2 month') ) or ( datetime(t1.starttime) between datetime(t2.studydatetime) and datetime(t2.studydatetime,'+2 month') )
+
+
+Q: did patient 16909232 undergo any procedure since 1 year ago and have a chest x-ray reveal any anatomical findings in the right hemidiaphragm within the same timeframe?
+NeuralSQL: select ( select count(*)>0 from procedures_icd where procedures_icd.hadm_id in ( select admissions.hadm_id from admissions where admissions.subject_id = 16909232 ) AND datetime(procedures_icd.charttime) >= datetime(current_time,'-1 year') ) and ( select count(distinct t1.study_id) > 0 from ( select tb_cxr.study_id from tb_cxr where tb_cxr.study_id in ( select distinct tb_cxr.study_id from tb_cxr where tb_cxr.subject_id = 16909232 AND datetime(tb_cxr.studydatetime) >= datetime(current_time,'-1 year') ) ) as t1 where func_vqa("is any anatomical findings revealed in the right hemidiaphragm on a chest x-ray?", t1.study_id) = true )
+
+
+Q: find the number of patients in the 20s with a chest x-ray showing any anatomical findings in the right lower lung zone last year.
+NeuralSQL: select count(distinct t1.subject_id) from ( select * from tb_cxr where tb_cxr.hadm_id in ( select admissions.hadm_id from admissions WHERE admissions.age BETWEEN 20 AND 29 ) AND datetime(tb_cxr.studydatetime,'start of year') = datetime(current_time,'start of year','-1 year') ) as t1 where func_vqa("is there a chest x-ray showing any anatomical findings in the right lower lung zone?", t1.study_id) = true

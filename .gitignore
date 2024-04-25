@@ -172,6 +172,10 @@ physionet.org/*
 physionet.org/files/mimic-cxr-jpg/2.0.0/*
 physionet.org/files/chest-imagenome/1.0.0/*
 physionet.org/files/mimiciv/2.2/*
+experiment/NeuralSQL/parser/api_key/*
+experiment/NeuralSQL/results/parser/*
+experiment/NeuralSQL/results/executor/*
+experiment/NeuralSQL/executor/visual_module/checkpoints/m3ae/*
 # ehrxqa/dataset/train.json
 # ehrxqa/dataset/valid.json
 # ehrxqa/dataset/test.json
