@@ -6,9 +6,6 @@
 ## Overview
 Electronic Health Records (EHRs), which contain patients' medical histories in various multi-modal formats, often overlook the potential for joint reasoning across imaging and table modalities underexplored in current EHR Question Answering (QA) systems. In this paper, we introduce EHRXQA, a novel multi-modal question answering dataset combining structured EHRs and chest X-ray images. To develop our dataset, we first construct two uni-modal resources: 1) The MIMIC-CXR-VQA dataset, our newly created medical visual question answering (VQA) benchmark, specifically designed to augment the imaging modality in EHR QA, and 2) EHRSQL (MIMIC-IV), a refashioned version of a previously established table-based EHR QA dataset. By integrating these two uni-modal resources, we successfully construct a multi-modal EHR QA dataset that necessitates both uni-modal and cross-modal reasoning. To address the unique challenges of multi-modal questions within EHRs, we propose a NeuralSQL-based strategy equipped with an external VQA API. This pioneering endeavor enhances engagement with multi-modal EHR sources and we believe that our dataset can catalyze advances in real-world medical scenarios such as clinical decision-making and research.
 
-- 💡 For a detailed exploration of the MIMIC-CXR-VQA component of our dataset, please visit [here](https://github.com/baeseongsu/mimic-cxr-vqa/).
-- 💡 For more details about the multi-modal QA dataset, please refer to our publication [EHRXQA: A Multi-Modal Question Answering Dataset for Electronic Health Records with Chest X-ray Images](https://arxiv.org/abs/2310.18652), presented at NeurIPS 2023 (Datasets and Benchmarks Track).
-
 
 ## Updates
 - [07/24/2024] We released [EHRXQA dataset](https://physionet.org/content/ehrxqa/1.0.0/) on Physionet.
