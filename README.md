@@ -10,6 +10,12 @@ Electronic Health Records (EHRs), which contain patients' medical histories in v
 - 💡 For more details about the multi-modal QA dataset, please refer to our publication [EHRXQA: A Multi-Modal Question Answering Dataset for Electronic Health Records with Chest X-ray Images](https://arxiv.org/abs/2310.18652), presented at NeurIPS 2023 (Datasets and Benchmarks Track).
 
 
+## Updates
+- [07/24/2024] We released [EHRXQA dataset](https://physionet.org/content/ehrxqa/1.0.0/) on Physionet.
+- [12/12/2023] We presented our research work at NeurIPS 2023 Datasets and Benchmarks Track as a [poster](https://neurips.cc/virtual/2023/poster/73600).
+- [10/28/2023] We released our research paper on [arXiv](https://arxiv.org/abs/2310.18652).
+
+
 ## Features
 
 - [x] Provide a script to download source datasets (MIMIC-CXR-JPG, Chest ImaGenome, and MIMIC-IV) from Physionet.
