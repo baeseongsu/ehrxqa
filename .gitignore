@@ -176,6 +176,9 @@ physionet.org/files/mimiciv/2.2/*
 # ehrxqa/dataset/valid.json
 # ehrxqa/dataset/test.json
 
+# Claude Code settings
+.claude/*
+
 # but keep the folder (by keeping .gitkeep file)
 !database/mimic_iii/.gitkeep
 !database/mimic_iv/.gitkeep
