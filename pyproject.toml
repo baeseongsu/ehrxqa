@@ -1,0 +1,39 @@
+[project]
+name = "ehrxqa"
+version = "1.0.0"
+description = "EHRXQA: A Multi-Modal Question Answering Dataset for Electronic Health Records with Chest X-ray Images"
+authors = [
+    {name = "Seongsu Bae", email = "seongsu@kaist.ac.kr"},
+    {name = "Daeun Kyung", email = "kyungdaeun@kaist.ac.kr"},
+]
+requires-python = ">=3.12"
+readme = "README.md"
+license = {text = "MIT"}
+keywords = [
+    "medical",
+    "healthcare",
+    "question-answering",
+    "multi-modal",
+    "chest-xray",
+    "electronic-health-records",
+    "mimic",
+    "dataset",
+]
+
+dependencies = [
+    "pandas>=3.0.0",
+    "tqdm>=4.67.0",
+    "scikit-learn>=1.8.0",
+    "dask>=2026.1.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/baeseongsu/ehrxqa"
+Repository = "https://github.com/baeseongsu/ehrxqa"
+Documentation = "https://github.com/baeseongsu/ehrxqa#readme"
+"Bug Reports" = "https://github.com/baeseongsu/ehrxqa/issues"
+"Paper (arXiv)" = "https://arxiv.org/abs/2310.18652"
+"Dataset (Physionet)" = "https://physionet.org/content/ehrxqa/1.0.0/"
+
+[dependency-groups]
+dev = []
