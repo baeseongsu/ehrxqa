@@ -19,7 +19,7 @@ def post_process_sql(
     current_time="2105-12-31 23:59:00",
     precomputed_dict={
         "temperature": (35.5, 38.1),
-        "sao2": (95.0, 100.0),
+        "spo2": (95.0, 100.0),
         "heart rate": (60.0, 100.0),
         "respiration": (12.0, 18.0),
         "systolic bp": (90.0, 120.0),
